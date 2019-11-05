@@ -6,4 +6,4 @@ Blackstar is the first cross-project for WU19. We worked together with Digital D
 ## Build Process
 
 ## Where to look at the site
-The site is uploaded to Netlify. [Blackstar](https://blackstar6.netlify.com/)
+The site is uploaded to Netlify. [Link to the site](https://blackstar6.netlify.com/)
