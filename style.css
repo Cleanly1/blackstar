@@ -4,6 +4,9 @@
 .accentColor {
   color: white;
 }
+.black {
+  color:black;
+}
 .fontBold {
   font-family: aktiv-grotesk, sans-serif;
   font-style: normal;
