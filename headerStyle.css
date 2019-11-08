@@ -12,9 +12,9 @@
   flex-flow: column nowrap;
   list-style: none;
   justify-content: center;
-  align-items: center;
-  margin: 24px auto;
+  align-items: flex-start; 
   font-size: 32px;
+  margin:20px 20px;
 }
 .hamburgerMenu {
   width: 46px;
@@ -31,4 +31,12 @@
   height: 100vh;
   width:100vw;
   z-index: 1;
+}
+.backButton {
+  width:46px;
+  height:46px;
+  background: aqua;
+}
+.menuitem {
+  margin:20px 0;
 }
