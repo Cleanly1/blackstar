@@ -36,6 +36,7 @@
   width:46px;
   height:46px;
   background: aqua;
+  float:right;
 }
 .menuitem {
   margin:20px 0;
