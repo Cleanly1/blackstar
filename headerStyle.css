@@ -1,0 +1,8 @@
+.navbarDesktop {
+  display: none;
+}
+.navbarMobile {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
