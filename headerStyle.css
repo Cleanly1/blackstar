@@ -1,8 +1,34 @@
 .navbarDesktop {
   display: none;
 }
-.navbarMobile {
+.navbarMobileBox {
   display: flex;
   flex-flow: row nowrap;
+  margin: 24px 10px;
+  height: 46px;
+}
+.navbarMobile {
+  display: flex;
+  flex-flow: column nowrap;
   list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 24px auto;
+  font-size: 32px;
+}
+.hamburgerMenu {
+  width: 46px;
+  height: 46px;
+  background-color: aqua;
+  cursor: pointer;
+}
+.hamburgerContent {
+  display: none;
+  position: absolute;
+  top:0;
+  left:0;
+  background: black;
+  height: 100vh;
+  width:100vw;
+  z-index: 1;
 }

@@ -1,7 +1,9 @@
 @import url("headerStyle.css");
 @import url("footerStyle.css");
 
-
+.accentColor {
+  color: white;
+}
 .fontBold {
   font-family: aktiv-grotesk, sans-serif;
   font-style: normal;
