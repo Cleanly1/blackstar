@@ -1,5 +1,11 @@
 @import url("headerStyle.css");
 @import url("footerStyle.css");
+@import url("contentStyle.css");
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+}
 
 .accentColor {
   color: white;
