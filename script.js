@@ -5,9 +5,11 @@
 
 const showMobileMenu = function(){
   window.document.getElementsByClassName('hamburgerContent')[0].style.display = 'block';
+  window.document.body.style.overflow = 'hidden';
 }
 const hideMobileMenu = function(){
   window.document.getElementsByClassName('hamburgerContent')[0].style.display = 'none';
+  window.document.body.style.overflow = 'scroll';
 }
 
 
