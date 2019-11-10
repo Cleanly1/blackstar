@@ -14,7 +14,7 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  margin: 24px 10px;
+  margin: 24px 20px;
   height: 46px;
 }
 .navbarMobile {
@@ -49,6 +49,7 @@ header {
   height:46px;
   background: aqua;
   float:right;
+  margin: 24px 20px;
 }
 .menuitem {
   margin:20px 0;
