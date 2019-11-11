@@ -8,12 +8,14 @@ header {
 }
 
 .navbarMobileBox {
+  position: fixed;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   padding: 24px 20px;
-  height: auto;
+  height: 40px;
+  width: 90%;
 }
 
 .navbarMobile {
@@ -36,6 +38,7 @@ header {
 
 .hamburgerContent {
   display: none;
+  top:
   position: relative;
   background: rgba(0, 0, 0, 0.9);
   height: 100vh;

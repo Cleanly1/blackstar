@@ -1,5 +1,12 @@
 .hero {
-  height: 88vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: 99vh;
+  background: url(images/previewImage.jpg);
+  background-size: cover;
+  background-position: center;
 }
  
 .specs {
