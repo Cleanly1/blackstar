@@ -69,12 +69,12 @@ header {
   background-color: #333;
   margin: 6px 0;
   transition: 0.4s;
+  transition-timing-function: ease-in-out;
 }
 
 /* Rotate first bar */
 .change .bar1 {
-  z-index:1;
-  -webkit-transform: rotate(-45deg) translate(-10px, 6px) ;
+  z-index:1; 
   transform: rotate(-45deg) translate(-5px, 10px) ;
 }
 
@@ -85,7 +85,6 @@ header {
 
 /* Rotate last bar */
 .change .bar3 {
-  z-index:1;
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  z-index:1; 
   transform: rotate(45deg) translate(-5px, -10px) ;
 }
