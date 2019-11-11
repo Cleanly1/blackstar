@@ -57,8 +57,7 @@ header {
   float:right;
   margin: 24px 20px; 
 }
-
-
+ 
 .menuitem {
   display: block;
   opacity: 0;
@@ -66,8 +65,7 @@ header {
   transition-delay: 0.1s;
   transition-duration: 0.3s;
 }
-
-
+ 
 .hamburgerMenu {
   display: inline-block;
   cursor: pointer;
