@@ -16,6 +16,7 @@ header {
   padding: 24px 20px;
   height: 40px;
   width: 90%;
+  background-color: none;
 }
 
 .navbarMobile {
@@ -38,7 +39,7 @@ header {
 
 .hamburgerContent {
   display: none;
-  top:
+  top:88px;
   position: relative;
   background: rgba(0, 0, 0, 0.9);
   height: 100vh;

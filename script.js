@@ -23,7 +23,7 @@ const showMobileMenu = function(x){
     document.getElementsByClassName('hamburgerContent')[0].style.display = 'none';
     document.getElementsByClassName('bar1')[0].style.background = 'black';
     document.getElementsByClassName('bar3')[0].style.background = 'black';
-    mobileNavbar.style.background = 'white';
+    mobileNavbar.style.background = 'none';
     window.document.body.style.overflow = 'scroll';
     
   }

@@ -14,3 +14,11 @@
   height: 100vh;
   width: 100%;
 }
+
+h1 {
+  background-color: black;
+  margin-top: 5px;
+}
+p {
+  text-shadow: 2px 2px 4px #000000;
+}
