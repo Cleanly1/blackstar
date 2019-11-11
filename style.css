@@ -10,24 +10,29 @@ body {
 .accentColor {
   color: white;
 }
+
 .black {
   color:black;
 }
+
 .fontBold {
   font-family: aktiv-grotesk, sans-serif;
   font-style: normal;
   font-weight: 700;
 }
+
 .fontMedium {
   font-family: aktiv-grotesk, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
+
 .fontRegular {
   font-family: aktiv-grotesk, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
+
 .fontLight {
   font-family: aktiv-grotesk, sans-serif;
   font-style: normal;
