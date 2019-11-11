@@ -17,6 +17,7 @@ header {
   height: 40px;
   width: 90%;
   background-color: none;
+  transition-duration: 0.5s;
 }
 
 .navbarMobile {
@@ -38,13 +39,14 @@ header {
 }
 
 .hamburgerContent {
-  display: none;
+  display: block;
   top:88px;
   position: fixed;
   background: rgba(0, 0, 0, 0.8);
-  height: 100vh;
-  width:100vw; 
+  height: 0;
+  width: 100vw; 
   z-index: 1;
+  transition-duration: 0.5s;
 }
 
 .backButton {
@@ -58,6 +60,7 @@ header {
 
 
 .menuitem {
+  display: none;
   margin:20px 0;
 }
 
