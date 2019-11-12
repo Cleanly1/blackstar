@@ -48,6 +48,9 @@ header {
   transition-delay: 0.3s;
   transition-duration: 0.5s;
 }
+.hamburgerContentShow {
+  height: 100%;
+}
 
 .backButton {
   display: flex;
@@ -58,12 +61,16 @@ header {
   margin: 24px 20px; 
 }
  
-.menuitem {
+.menuItem {
   display: block;
   opacity: 0;
   margin:20px 0;
   transition-delay: 0.35s;
   transition-duration: 0.3s;
+}
+
+.menuItemShow {
+  opacity: 1;
 }
  
 .hamburgerMenu {

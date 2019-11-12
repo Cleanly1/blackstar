@@ -5,6 +5,11 @@
 body {
   display: flex;
   flex-flow: column nowrap;
+  overflow: scroll;
+}
+
+.scrollHidden {
+  overflow: hidden;
 }
 
 .accentColor {
