@@ -29,10 +29,7 @@ p {
   margin: 40px 10px;
   border-bottom: 2px solid white;
 }
-
-.specList:first-child {
-  border-top: 2px solid white;
-}
+ 
 
 h6 {
   margin:16px;
@@ -41,6 +38,11 @@ h6 {
 
 h3 {
   margin:20px;
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+h3:first-child {
+  margin:0 20px;
   margin-bottom: 16px;
   font-size: 32px;
 }
