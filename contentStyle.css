@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: flex-start;
   height: 99vh;
-  background: url(images/previewImage.jpg);
+  background-image: url(images/previewImage.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -55,7 +55,7 @@ h3:first-child {
   justify-content: center;
   height: 100vh;
   width:100vw;
-  background: url(images/inmotionpreview.jpg);
+  background-image: url(images/inmotionpreview.jpg);
   background-size: cover;
   background-position: 75% 75%;
   background-attachment: fixed;
