@@ -15,8 +15,7 @@ header {
   align-items: center;
   padding: 16px 5%;
   height: 40px;
-  width: 90%;
-  background-color: none;
+  width: 90%; 
   transition-duration: 0.3s;
 }
 
@@ -84,7 +83,8 @@ header {
 /* Rotate first bar */
 .change .bar1 {
   z-index:1; 
-  transform: rotate(-45deg) translate(-5px, 10px) ;
+  transform: rotate(-45deg) translate(-5px, 10px);
+  background-color: #FFFFFF;
 }
 
 /* Fade out the second bar */
@@ -95,5 +95,6 @@ header {
 /* Rotate last bar */
 .change .bar3 {
   z-index:1; 
-  transform: rotate(45deg) translate(-5px, -10px) ;
+  transform: rotate(45deg) translate(-5px, -10px);
+  background-color: #FFFFFF;
 }
