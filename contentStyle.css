@@ -66,7 +66,8 @@ h3:first-child {
   font-size: 26px;
   margin: 12px 20px;
 }
-.buttonText {
+
+.requestButtonText {
   margin:0;
   font-size: 24px;
 }
@@ -74,6 +75,16 @@ h3:first-child {
   margin: 12px 20px;
   padding: 10px 5px;
   border: 2px solid white;
+  background-color: none;
+}
+
+.requestTestRide:hover {
+  background-color: white;
+  border-color: black;
+}
+
+.requestTestRide:hover .requestButtonText {
+  color:black;
 }
 
 .engineering {
@@ -104,6 +115,16 @@ h3:first-child {
   padding: 10px 10px;
   border: 2px solid white;
   width:40%;
+}
+
+.readMoreButton:hover {
+  background-color: white;
+  color:black;
+  border-color: black;
+}
+
+.readMoreButton:hover .readMoreText {
+  color:black;
 }
 
 .readMoreText {

@@ -23,11 +23,18 @@ header {
   display: flex;
   flex-flow: column nowrap;
   list-style: none;
+  height: 0;
   justify-content: center;
   align-items: flex-start; 
   font-size: 32px;
   margin:0 40px;
   padding-left:0;
+  transition-delay: 0.35s;
+  transition-duration: 0.3s;
+}
+
+.navbarMobileListShow {
+  height: auto;
 }
 
 .hamburgerMenu {
@@ -64,13 +71,14 @@ header {
 .menuItem {
   display: block;
   opacity: 0;
-  margin:20px 0;
+  margin:0;
   transition-delay: 0.35s;
   transition-duration: 0.3s;
-}
+} 
 
 .menuItemShow {
   opacity: 1;
+  margin: 20px 0;
 }
  
 .hamburgerMenu {

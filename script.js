@@ -8,14 +8,16 @@ const showMobileMenu = function(){
   
   let isToggled = toggle.classList.toggle("change")
   document.body.classList.toggle("scrollHidden")
+  document.getElementsByClassName('navbarMobile')[0].classList.toggle("navbarMobileListShow");
   hamburger.classList.toggle("hamburgerContentShow");
   
+   
   for (var i = 0; i < menuItem.length; i++) {
     menuItem[i].classList.toggle("menuItemShow");
-  }
-  
+  } 
   // changes color of navbarMobileBox
   if (isToggled === true) { 
+    
     
     mobileNavbar.style.background = 'rgba(0, 0, 0, 0.8)';
     
