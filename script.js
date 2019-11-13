@@ -47,7 +47,7 @@ const displayScroll = function() {
 
 
 
-setInterval(function(){ window.document.getElementsByClassName('hero')[0].classList.toggle("heroBG2"); }, 6000);
+setInterval(function(){ window.document.getElementsByClassName('hero')[0].classList.toggle("heroBG2"); }, 4000);
 
 
 window.onscroll = displayScroll;
