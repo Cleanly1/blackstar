@@ -75,3 +75,43 @@ h3:first-child {
   padding: 10px 5px;
   border: 2px solid white;
 }
+
+.engineering {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.engineeringH1 {
+  font-size: 32px;
+  margin: 0px 20px;
+}
+
+.engineeringText {
+  font-size: 16px;
+  margin: 16px 20px;
+}
+
+.engineeringText:first-child {
+  margin-top:40px;
+}
+
+.readMoreButton {
+  display: flex;
+  justify-content: center;
+  margin: 16px 20px;
+  margin-bottom: 40px;
+  padding: 10px 10px;
+  border: 2px solid white;
+  width:40%;
+}
+
+.readMoreText {
+  margin:0;
+  font-size: 24px;
+}
+
+
+
+
+
