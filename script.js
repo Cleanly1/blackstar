@@ -10,9 +10,7 @@ const showMobileMenu = function(){
   let isToggled = toggle.classList.toggle("change")
   document.body.classList.toggle("scrollHidden")
   
-  hamburger.classList.toggle("hamburgerContentShow");
-  
-  document.getElementsByClassName('navbarMobile')[0].classList.toggle("navbarMobileListShow");
+  hamburger.classList.toggle("hamburgerContentShow"); 
    
   for (var i = 0; i < menuItem.length; i++) {
     menuItem[i].classList.toggle("menuItemShow");
