@@ -23,7 +23,7 @@ header {
   display: flex;
   flex-flow: column nowrap;
   list-style: none;
-  height: 0;
+  height: auto;
   justify-content: center;
   align-items: flex-start; 
   font-size: 32px;
@@ -31,11 +31,7 @@ header {
   padding-left:0;
   transition-delay: 0.35s;
   transition-duration: 0.3s;
-}
-
-.navbarMobileListShow {
-  height: auto;
-}
+} 
 
 .hamburgerMenu {
   width: 46px;
@@ -71,6 +67,7 @@ header {
 .menuItem {
   display: block;
   opacity: 0;
+  height: 0;
   margin:0;
   transition-delay: 0.35s;
   transition-duration: 0.3s;
@@ -78,6 +75,7 @@ header {
 
 .menuItemShow {
   opacity: 1;
+  height: auto;
   margin: 20px 0;
 }
  
