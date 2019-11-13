@@ -8,7 +8,12 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  transition-duration: 1s; 
 } 
+
+.heroBG2 {
+  background-image: url(images/previewImage.jpg);
+}
 
 .heroTextH1 {
   background-color: black;

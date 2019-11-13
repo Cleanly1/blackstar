@@ -28,9 +28,9 @@ const showMobileMenu = function(){
   else if (isToggled === false) {
     
     if (scrollY > 100) {
-      document.querySelector('.navbarMobileBox').style.background = 'white'
+      document.querySelector('.navbarMobileBox').style.background = 'white';
     }else {
-      document.querySelector('.navbarMobileBox').style.background = 'none'
+      document.querySelector('.navbarMobileBox').style.background = 'none';
     }
     
   }
@@ -39,11 +39,15 @@ const showMobileMenu = function(){
 
 const displayScroll = function() {
   if (scrollY > 100) {
-    document.querySelector('.navbarMobileBox').style.background = 'white'
+    document.querySelector('.navbarMobileBox').style.background = 'white';
   }else {
-    document.querySelector('.navbarMobileBox').style.background = 'none'
+    document.querySelector('.navbarMobileBox').style.background = 'none';
   }
 }
+
+
+
+setInterval(function(){ window.document.getElementsByClassName('hero')[0].classList.toggle("heroBG2"); }, 6000);
 
 
 window.onscroll = displayScroll;
