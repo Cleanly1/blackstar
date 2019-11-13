@@ -75,7 +75,7 @@ h3:first-child {
   margin: 12px 20px;
   padding: 10px 5px;
   border: 2px solid white;
-  background-color: none;
+  background-color: transparent;
 }
 
 .requestTestRide:hover {
@@ -84,7 +84,7 @@ h3:first-child {
 }
 
 .requestTestRide:hover .requestButtonText {
-  color:black;
+  color: black;
 }
 
 .engineering {
