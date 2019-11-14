@@ -27,7 +27,7 @@ const showMobileMenu = function(){
   // changes color of navbarMobileBox
   else if (isToggled === false) {
     
-    if (scrollY > 100) {
+    if (window.pageYOffset > 100) {
       document.querySelector('.navbarMobileBox').style.background = 'white';
     }else {
       document.querySelector('.navbarMobileBox').style.background = 'none';
@@ -38,7 +38,7 @@ const showMobileMenu = function(){
 }
 
 const displayScroll = function() {
-  if (scrollY > 100) {
+  if (window.pageYOffset > 100) {
     document.querySelector('.navbarMobileBox').style.background = 'white';
   }else {
     document.querySelector('.navbarMobileBox').style.background = 'none';

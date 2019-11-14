@@ -18,6 +18,9 @@ header {
   width: 90%; 
   transition-duration: 0.1s;
 }
+.navbarMobileBoxWhite {
+  background-color: white;
+}
 
 .navbarMobile {
   display: flex;
