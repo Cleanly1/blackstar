@@ -84,13 +84,13 @@ h3:first-child {
 }
 
 .requestTestRide:hover {
-  background-color: rgb(128, 128, 128, 0.4);
+  background-color: rgb(50, 50, 50, 0.7);
   border: 2px solid rgb(211, 211, 211, 0);
   cursor: pointer;
 }
 
 .requestTestRide:hover .requestButtonText {
-  color: black;
+  color: white;
 }
 
 .engineering {
@@ -128,6 +128,7 @@ h3:first-child {
   background-color: white;
   color:black;
   border-color: black;
+  cursor: pointer;
 }
 
 .readMoreButton:hover .readMoreText {
@@ -195,6 +196,7 @@ h3:first-child {
   background-color: white;
   color:black;
   border-color: black;
+  cursor: pointer;
 }
 
 .downloadButton:hover .downloadButtonText {
@@ -206,31 +208,76 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   background-color: black; 
-}
-
-.footerList {
   border-top: 2px solid white;
-  list-style: none;
-  padding: 0;
   margin: 0 20px;
 }
 
+.footerList {
+  align-self: flex-start;
+  list-style: none;
+  padding: 0;
+  width: auto;
+}
+
 .footerList li {
+  font-size: 18px;
+  font-weight: 700;
+  /* margin-top: 40px; */
   margin: 16px 0;
 }
 
-.footerList li:nth-child(4n + 1) {
-  font-size: 18px;
-  font-weight: 700;
-  margin-top: 40px;
+
+
+/* Dropdown Button */
+.dropbtn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
+
+.dropdown {
+  display: flex;
+  flex-flow: column;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content p {
+  color: white;
+  margin: 10px 5px;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display:block;
+}
+
+.arrow {
+  margin-left: 10px;
+  width: 20px;
+  transition-duration: 0.5s;
+}
+
+.arrowActive {
+  transform: rotate(180deg);
+}
+
 
 .copyright {
   display: flex;
   justify-content: center;
   align-self: center;
   border-top: 2px solid white;
-  margin: 20px 20px;
+  margin: 20px 0;
 }
 
 .copyrightText {

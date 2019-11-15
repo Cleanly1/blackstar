@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   overflow: scroll;
+  background-color: black;
 }
 
 .scrollHidden {

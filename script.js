@@ -47,6 +47,52 @@ const displayScroll = function() {
 
 
 
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+
+// Close the dropdown menu if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropbtn')) {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
+// console.log(window.document.body.querySelector('.arrow'))
+
+const allDropDowns = document.body.querySelectorAll(".dropbtn");
+const arrows = window.document.body.querySelectorAll('.arrow');
+
+allDropDowns.forEach(function(dropDown){
+  
+  dropDown.addEventListener('click', function(event){
+    
+    if (event.target === allDropDowns[0] || event.target === arrows[0]) {
+      document.body.querySelector(".blackDrop").classList.toggle("show");
+      arrows[0].classList.toggle('arrowActive');
+    }
+    
+    if (event.target === allDropDowns[1] || event.target === arrows[1]) {
+      document.body.querySelector(".expDrop").classList.toggle("show");
+      arrows[1].classList.toggle('arrowActive');
+    }
+    
+    if (event.target === allDropDowns[2] || event.target === arrows[2]) {
+      document.body.querySelector(".startDrop").classList.toggle("show");
+      arrows[2].classList.toggle('arrowActive');
+    }
+  })
+    
+  
+})
+
+
 // setInterval(function(){ window.document.getElementsByClassName('hero')[0].classList.toggle("heroBG2"); }, 4000);
 
 
