@@ -23,6 +23,7 @@
 
 .mailInput {
   background: none;
+  border-radius: 4px;
   border: 2px solid white;
   padding: 10px 10px;
 }
@@ -40,6 +41,10 @@
   color: white;
 }
 
+.mailInput:focus {
+  outline-offset: -1px;
+  outline: 4px solid rgba(100, 150, 255, 0.6);
+}
 
 
 

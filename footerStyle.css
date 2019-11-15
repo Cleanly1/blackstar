@@ -61,7 +61,7 @@ footer {
 }
 
 .arrowActive {
-  transform: rotate(180deg);
+  transform: rotateZ(180deg) rotateY(180deg);
 }
 
 .footerDesktop {
@@ -88,8 +88,7 @@ footer {
 .copyright {
   display: flex;
   justify-content: center;
-  align-self: center;
-  border-top: 2px solid white;
+  align-self: center; 
   margin-bottom: 20px;
   width: 100%;
 }
