@@ -258,7 +258,7 @@ footer {
 }
 
 .show {
-  display:block;
+  display: block;
 }
 
 .arrow {
@@ -271,6 +271,26 @@ footer {
   transform: rotate(180deg);
 }
 
+.footerDesktop {
+  display: none;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  border-top: 2px solid white;
+  
+}
+
+.listFooterDesktop {
+  list-style: none;
+  padding: 0;
+}
+
+.listFooterDesktop span {
+  margin-bottom: 40px;
+}
+
+.listFooterDesktop li {
+  margin: 10px 0;
+}
 
 .copyright {
   display: flex;
