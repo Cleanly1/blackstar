@@ -10,7 +10,7 @@ footer {
   align-self: flex-start;
   list-style: none;
   padding: 0;
-  width: auto;
+  width: 100%;
   margin: 16px 0;
 } 
 
@@ -19,7 +19,7 @@ footer {
 .dropbtn {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   background-color: black;
   color: white;
   font-size: 16px;

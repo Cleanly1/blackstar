@@ -93,6 +93,10 @@ allDropDowns.forEach(function(dropDown){
 })
 
 
+setTimeout(function(){
+  window.document.querySelector('.backgroundGrey').classList.toggle("heroShowOverlay");
+}, 1000)
+
 // setInterval(function(){ window.document.getElementsByClassName('hero')[0].classList.toggle("heroBG2"); }, 4000);
 
 
