@@ -97,6 +97,26 @@ setTimeout(function(){
   window.document.querySelector('.backgroundGrey').classList.toggle("heroShowOverlay");
 }, 1000)
 
+
+window.document.querySelector('.mailInput').addEventListener('keydown', function(event){
+  if (event.code === "Enter") {
+    window.document.querySelector('.mailButton').classList.toggle("mailButtonChange");
+    window.document.querySelector('.mailInput').classList.toggle("mailButtonDisplay");
+    window.document.querySelector('.completedMailSignup').classList.toggle("displayConfirmation");
+    setTimeout(function(){
+      window.document.querySelector('.backgroundGrey').classList.toggle("heroShowOverlay");
+    }, 3000)
+  }
+})
+
+window.document.querySelector('.mailButton').addEventListener('click', function(){
+  window.document.querySelector('.mailButton').classList.toggle("mailButtonChange");
+  window.document.querySelector('.mailInput').classList.toggle("mailButtonDisplay");
+  window.document.querySelector('.completedMailSignup').classList.toggle("displayConfirmation");
+  setTimeout(function(){
+    window.document.querySelector('.backgroundGrey').classList.toggle("heroShowOverlay");
+  }, 3000)
+})
 // setInterval(function(){ window.document.getElementsByClassName('hero')[0].classList.toggle("heroBG2"); }, 4000);
 
 
