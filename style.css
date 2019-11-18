@@ -7,6 +7,7 @@ body {
   flex-flow: column nowrap;
   overflow: scroll;
   background-color: black;
+  overflow-x: hidden;
 }
 
 .scrollHidden {
