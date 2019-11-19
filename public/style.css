@@ -1,6 +1,7 @@
 @import url("footerStyle.css");
 @import url("contentStyle.css");
 @import url("headerStyle.css");
+@import url("mediaQueries.css");
 
 body {
   display: flex;

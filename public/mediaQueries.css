@@ -1,0 +1,25 @@
+
+@media (min-width:1024px) {
+  .hidden-mobile {
+    display: none;
+  }
+  .navbarDesktop {
+    position: absolute;
+    width:100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menuDesktop {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+  }
+  .menuItemDesktop {
+    margin:10px;
+  }
+  .hamburgerMenu {
+    display: none;
+  }
+}
