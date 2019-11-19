@@ -229,6 +229,7 @@ h3:first-child {
   padding: 10px 10px;
   border: 2px solid white;
   width: 40%;
+  background-color: transparent;
 }
 
 .readMoreButton:hover {
@@ -277,8 +278,8 @@ h3:first-child {
 }
 
 .folderImg {
-  height: 137px;
-  width: 332px;
+  height: auto;
+  width: 89%;
   margin: 16px 20px;
   margin-top: 40px;
 }
@@ -290,7 +291,8 @@ h3:first-child {
   margin-bottom: 40px;
   padding: 10px 10px;
   border: 2px solid white;
-  width: 55%;
+  width: 89%;
+  background-color: transparent;
 }
 
 .downloadButtonText {
