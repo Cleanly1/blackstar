@@ -14,14 +14,7 @@ footer {
   margin: 16px 0;
 } 
 
-.hej {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
-  width: auto;
-  height: auto;
-}
+
 /* Dropdown Button */
 .dropbtn {
   display: flex;

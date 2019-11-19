@@ -11,10 +11,14 @@ const showMobileMenu = function(){
   document.body.classList.toggle("scrollHidden")
   
   hamburger.classList.toggle("hamburgerContentShow"); 
-   
+
+
   for (var i = 0; i < menuItem.length; i++) {
     menuItem[i].classList.toggle("menuItemShow");
   } 
+
+   
+  
   
   
   // changes color of navbarMobileBox
@@ -38,7 +42,7 @@ const showMobileMenu = function(){
 }
 
 const displayScroll = function() {
-  if (window.pageYOffset > 100) {
+  if (window.pageYOffset > 100 && window.outerWidth > 1024) {
     document.querySelector('.navbarMobileBox').style.background = 'white';
   }else {
     document.querySelector('.navbarMobileBox').style.background = 'none';
@@ -122,3 +126,4 @@ window.document.querySelector('.mailButton').addEventListener('click', function(
 
 window.onscroll = displayScroll;
 window.document.getElementsByClassName('hamburgerMenu')[0].addEventListener('click', showMobileMenu); 
+
