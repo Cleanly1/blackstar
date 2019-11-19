@@ -42,7 +42,7 @@ const showMobileMenu = function(){
 }
 
 const displayScroll = function() {
-  if (window.pageYOffset > 100 && window.outerWidth < 1024) {
+  if (window.pageYOffset > 100 && window.innerWidth < 1024) {
     document.querySelector('.navbarMobileBox').style.background = 'white';
   }else {
     document.querySelector('.navbarMobileBox').style.background = 'none';
