@@ -67,12 +67,12 @@ toggle between hiding and showing the dropdown content */
 // console.log(window.document.body.querySelector('.arrow'))
 
 const allDropDowns = document.body.querySelectorAll(".dropbtn");
-const arrows = window.document.body.querySelectorAll('.arrow');
+const arrows = document.body.querySelectorAll('.arrow');
 
 allDropDowns.forEach(function(dropDown){
   
   dropDown.addEventListener('click', function(event){
-    
+    console.log(event.target);
     if (event.target === allDropDowns[0] || event.target === arrows[0]) {
       document.body.querySelector(".blackDrop").classList.toggle("show");
       arrows[0].classList.toggle('arrowActive');
