@@ -92,8 +92,9 @@ footer {
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-self: center;
-  height: 100px;
-  width: 40%;
+  margin-bottom: 20px;
+  height: 60px;
+  width: 100%;
 }
 
 .socialIcons {
@@ -124,7 +125,7 @@ footer {
   display: flex;
   justify-content: center;
   align-self: center; 
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
 }
 

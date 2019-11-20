@@ -97,7 +97,10 @@
 }
 
 .displayConfirmation {
-  display: flex;
+  display: flex; 
+}
+
+.displayConfirmationTransition {
   opacity: 1;
 }
 
@@ -260,6 +263,8 @@ h3:first-child {
 } 
 
 .folder {
+  display: flex;
+  flex-flow: column nowrap;
   background-color: black;
   height: 100%;
   width: 100%;
@@ -267,17 +272,18 @@ h3:first-child {
 
 .folderH1 {
   font-size: 32px;
-  margin: 40px 20px;
+  margin: 40px 5%;
   margin-bottom: 16px;
 }
 
 .folderText {
   font-size: 16px;
   line-height: 1.5em;
-  margin: 16px 20px;
+  margin: 16px 5%;
 }
 
 .folderImg {
+  align-self: center;
   height: auto;
   width: 89%;
   margin: 16px 20px;
@@ -287,6 +293,7 @@ h3:first-child {
 .downloadButton {
   display: flex;
   justify-content: center;
+  align-self: center;
   margin: 16px 20px;
   margin-bottom: 40px;
   padding: 10px 10px;

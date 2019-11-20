@@ -76,7 +76,7 @@ const arrows = document.body.querySelectorAll('.arrow');
 allDropDowns.forEach(function(dropDown){
   
   dropDown.addEventListener('click', function(event){
-    console.log(event.target);
+    
     if (event.target === allDropDowns[0] || event.target === arrows[0]) {
       document.body.querySelector(".blackDrop").classList.toggle("show");
       arrows[0].classList.toggle('arrowActive');
@@ -117,6 +117,9 @@ window.document.querySelector('.mailButton').addEventListener('click', function(
   window.document.querySelector('.mailButton').classList.toggle("mailButtonChange");
   window.document.querySelector('.mailInput').classList.toggle("mailButtonDisplay");
   window.document.querySelector('.completedMailSignup').classList.toggle("displayConfirmation");
+  setTimeout(function(){
+    window.document.querySelector('.completedMailSignup').classList.toggle("displayConfirmationTransition");
+  }, 100)
   setTimeout(function(){
     window.document.querySelector('.backgroundGrey').classList.toggle("heroShowOverlay");
   }, 3000)
