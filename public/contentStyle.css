@@ -31,7 +31,7 @@
 .mailField {
   display: flex;
   flex-flow: row nowrap;
-  margin: 10px 10px;
+  margin: 10px 0;
 }
 
 .mailInput {
@@ -106,13 +106,13 @@
 
 .heroTextH1 {
   opacity: 1;
-  margin: 5px 10px;
+  margin: 5px 0;
   transition-duration: 2s;
 }
 
 .heroTeaserText {
   opacity: 1;
-  margin: 5px 10px;
+  margin: 5px 0;
   transition-duration: 2s;
 }
 
@@ -124,7 +124,8 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
+  width: 90%;
+  padding: 0 5%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   transition-duration: 2s;
@@ -142,23 +143,23 @@
 }
 
 .specList {
-  margin: 40px 10px;
+  margin: 40px 5%;
   /* border-bottom: 2px solid white; */
 }
  
 
 h6 {
-  margin:16px;
+  margin: 16px 0;
   font-size: 16px;
 }
 
 h3 {
-  margin:20px;
+  margin: 20px 0;
   margin-bottom: 16px;
   font-size: 32px;
 }
 h3:first-child {
-  margin:0 20px;
+  margin:0;
   margin-bottom: 16px;
   font-size: 32px;
 }
@@ -179,7 +180,7 @@ h3:first-child {
 .testRideH1 {
   width: 60%;
   font-size: 26px;
-  margin: 12px 20px;
+  margin: 12px 5%;
 }
 
 .requestButtonText {
@@ -187,7 +188,7 @@ h3:first-child {
   font-size: 24px;
 }
 .requestTestRide {
-  margin: 12px 20px;
+  margin: 12px 5%;
   padding: 10px 5px;
   border: 2px solid black;
   background-color: black;
@@ -211,13 +212,13 @@ h3:first-child {
 
 .engineeringH1 {
   font-size: 32px;
-  margin: 0px 20px;
+  margin: 0px 5%;
 }
 
 .engineeringText {
   font-size: 16px;
   line-height: 1.5em;
-  margin: 16px 20px;
+  margin: 16px 5%;
 }
 
 .engineeringText:first-child {
@@ -227,7 +228,7 @@ h3:first-child {
 .readMoreButton {
   display: flex;
   justify-content: center;
-  margin: 16px 20px;
+  margin: 16px 5%;
   margin-bottom: 40px;
   padding: 10px 10px;
   border: 2px solid white;
@@ -246,7 +247,7 @@ h3:first-child {
 }
 
 .readMoreText {
-  margin:0;
+  margin: 0;
   font-size: 24px;
 }
 
@@ -267,38 +268,38 @@ h3:first-child {
   flex-flow: column nowrap;
   background-color: black;
   height: 100%;
-  width: 100%;
+  width: 90%;
+  padding: 0 5%;
 }
 
 .folderH1 {
   font-size: 32px;
-  margin: 40px 5%;
+  margin: 40px 0;
   margin-bottom: 16px;
 }
 
 .folderText {
   font-size: 16px;
+  width: 95%;
   line-height: 1.5em;
-  margin: 16px 5%;
+  margin: 16px 0;
 }
 
-.folderImg {
-  align-self: center;
+.folderImg { 
   height: auto;
-  width: 89%;
-  margin: 16px 20px;
+  width: 100%;
+  margin: 16px 0;
   margin-top: 40px;
 }
 
 .downloadButton {
   display: flex;
   justify-content: center;
-  align-self: center;
-  margin: 16px 20px;
+  margin: 16px 0;
   margin-bottom: 40px;
   padding: 10px 10px;
   border: 2px solid white;
-  width: 89%;
+  width: 50%;
   background-color: transparent;
 }
 
