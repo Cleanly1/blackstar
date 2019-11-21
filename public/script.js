@@ -97,7 +97,11 @@ window.document.querySelector('.mailButton').addEventListener('click', function(
   }, 100)
   setTimeout(function(){
     window.document.querySelector('.backgroundGrey').classList.toggle("heroShowOverlay");
+    setTimeout(function(){
+      window.document.querySelector('.mailButton').style.display = 'none'
+    }, 2000)
   }, 3000)
+  
 })
 // setInterval(function(){ window.document.getElementsByClassName('hero')[0].classList.toggle("heroBG2"); }, 4000);
 

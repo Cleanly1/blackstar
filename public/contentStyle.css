@@ -10,6 +10,7 @@
   background-position: center;
   background-attachment: fixed;
   transition-duration: 1s; 
+  overflow: hidden;
 } 
 
 .completedMailSignup {
@@ -296,18 +297,24 @@ h3:first-child {
 
 .downloadButton {
   display: flex;
-  justify-content: center;
-  margin: 16px 0;
-  margin-bottom: 40px;
+  justify-content: center; 
   padding: 10px 10px;
   border: 2px solid white;
-  width: 50%;
+  width: 100%;
   background-color: transparent;
 }
 
 .downloadButtonText {
   margin:0;
   font-size: 24px;
+}
+
+.download {
+  width: 50%;
+  height: 50px;
+  margin: 16px 0;
+  margin-bottom: 40px;
+  text-decoration: none;
 }
 
 .downloadButton:hover {
