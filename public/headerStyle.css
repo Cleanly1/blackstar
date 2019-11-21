@@ -43,7 +43,7 @@ header {
   display: block;
   top:72px;
   position: fixed;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   height: 0;
   width: 100vw; 
   z-index: 1;
@@ -82,9 +82,9 @@ header {
 }
 
 .menuItemShow {
-  opacity: 1;
-  height: auto; 
+  opacity: 1; 
   margin: 20px 0;
+  height: auto; 
 }
  
 .hamburgerMenu {

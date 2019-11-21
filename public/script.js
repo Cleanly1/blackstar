@@ -10,22 +10,17 @@ const showMobileMenu = function(){
   let isToggled = toggle.classList.toggle("change")
   document.body.classList.toggle("scrollHidden")
   
-  hamburger.classList.toggle("hamburgerContentShow"); 
-
+  hamburger.classList.toggle("hamburgerContentShow");  
 
   for (var i = 0; i < menuItem.length; i++) {
     menuItem[i].classList.toggle("menuItemShow");
-  } 
-
-   
-  
+  }  
   
   
   // changes color of navbarMobileBox
   if (isToggled === true) { 
     
-    
-    mobileNavbar.style.background = 'rgba(0, 0, 0, 0.8)';
+    mobileNavbar.style.background = 'rgba(0, 0, 0, 0.9)';
     
   }
   // changes color of navbarMobileBox
@@ -39,6 +34,7 @@ const showMobileMenu = function(){
     
   }
   
+  
 }
 
 const displayScroll = function() {
@@ -48,28 +44,7 @@ const displayScroll = function() {
     document.querySelector('.navbarMobileBox').style.background = 'none';
   }
 }
-
-
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-
-
-// Close the dropdown menu if the user clicks outside of it
-// window.onclick = function(event) {
-//   if (!event.target.matches('.dropbtn')) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
-// console.log(window.document.body.querySelector('.arrow'))
-
+ 
 const allDropDowns = document.body.querySelectorAll(".dropbtn");
 const arrows = document.body.querySelectorAll('.arrow');
 
