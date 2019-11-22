@@ -76,19 +76,7 @@ setTimeout(function(){
   window.document.querySelector('.backgroundGrey').classList.toggle("heroShowOverlay");
 }, 1000)
 
-
-window.document.querySelector('.mailInput').addEventListener('keydown', function(event){
-  if (event.code === "Enter") {
-    window.document.querySelector('.mailButton').classList.toggle("mailButtonChange");
-    window.document.querySelector('.mailInput').classList.toggle("mailButtonDisplay");
-    window.document.querySelector('.completedMailSignup').classList.toggle("displayConfirmation");
-    setTimeout(function(){
-      window.document.querySelector('.backgroundGrey').classList.toggle("heroShowOverlay");
-    }, 3000)
-  }
-})
-
-window.document.querySelector('.mailButton').addEventListener('click', function(){
+const mailConfirm = function(){
   window.document.querySelector('.mailButton').classList.toggle("mailButtonChange");
   window.document.querySelector('.mailInput').classList.toggle("mailButtonDisplay");
   window.document.querySelector('.completedMailSignup').classList.toggle("displayConfirmation");
@@ -101,11 +89,31 @@ window.document.querySelector('.mailButton').addEventListener('click', function(
       window.document.querySelector('.mailButton').style.display = 'none'
     }, 2000)
   }, 3000)
-  
+}
+
+
+window.document.querySelector('.mailInput').addEventListener('keydown', function(event){
+  if (event.code === "Enter") {
+    mailConfirm();
+  }
+})
+
+window.document.querySelector('.mailButton').addEventListener('click', function(){
+  mailConfirm();
+})
+
+window.document.querySelector('.mailInput').addEventListener('focus', function(){
+  window.document.querySelector('.mailInput').setAttribute('placeholder', 'example@example.se')
+})
+
+window.document.querySelector('.mailInput').addEventListener('focusout', function(){
+  window.document.querySelector('.mailInput').setAttribute('placeholder', 'BlackStar Exclusive')
 })
 // setInterval(function(){ window.document.getElementsByClassName('hero')[0].classList.toggle("heroBG2"); }, 4000);
 
 
 window.onscroll = displayScroll;
-window.document.getElementsByClassName('hamburgerMenu')[0].addEventListener('click', showMobileMenu); 
+window.document.getElementsByClassName('hamburgerMenu')[0].addEventListener('click', function(){
+  showMobileMenu();
+}); 
 

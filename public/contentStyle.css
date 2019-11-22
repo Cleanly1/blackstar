@@ -44,9 +44,20 @@
   padding: 10px 10px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.mailInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  text-align: center;
+  color: white;
+  opacity: 0.9; /* Firefox */
+}
+
+.mailInput:focus::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  text-align: left;
   color: white;
   opacity: 0.7; /* Firefox */
+}
+
+.mailInputFocused::placeholder {
+  
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
