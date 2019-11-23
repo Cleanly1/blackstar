@@ -115,8 +115,7 @@ function isElementInViewMobile (el) {
 
 window.document.addEventListener('scroll', function(){
   const overlay2d = window.document.querySelector('.overlay2d')
-  
- console.log(isElementInView(overlay2d));
+   
   if (window.innerWidth > 1024 && isElementInView(overlay2d)) {
     overlay2d.classList.add('show2dOverlayDesktop');
   }

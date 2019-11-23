@@ -92,12 +92,14 @@
   .name {
     margin: 12px 5%;
   }
-  .hej {
+  
+  .engineeringBox {
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
   }
+  
   .engineering {
     display: flex;
     flex-flow: column wrap;
@@ -111,6 +113,7 @@
   .engineeringH1 {
     order: 0;
   }
+  
   .engineeringText {
     padding-top: 20px;
     width: 60%;
@@ -136,6 +139,7 @@
     background-repeat: no-repeat;
     transition-duration: 2s; 
   }
+  
   .show2dOverlayDesktop {
     background-image: url(images/fullTekniskOverlay.jpg);
   }
@@ -166,16 +170,20 @@
   .hamburgerMenu {
     display: none;
   }
+  
   .footerDesktop {
     display: flex;
   }
+  
   .footerListMobile {
     display: none;
   }
+  
   .social {
     justify-content: space-evenly;
     width: 40%;
   }
+  
   .socialIcons:hover {
     cursor: pointer;
   }
@@ -197,6 +205,7 @@
     align-items: center;
     justify-content: space-around;
   }
+  
   .testRide {
     background-image: url(images/inmotionpreviewDesktop.jpg);
     background-position: center;
@@ -215,6 +224,7 @@
     background-repeat: no-repeat;
     transition-duration: 2s; 
   }
+  
   .show2dOverlayTablet {
     background-image: url(images/fullTekniskOverlay.jpg);
   }

@@ -221,25 +221,26 @@ h3:first-child {
   background-color: black;
   height: 100%;
   width: 100%;
+  padding: 40px 0;
 }
 
 .engineeringH1 {
   font-size: 32px;
-  margin: 0px 5%;
-  margin-top: 40px;
+  margin: 0px 5%; 
 }
 
 .engineeringText {
   font-size: 16px;
   line-height: 1.5em;
   margin: 16px 5%;
+  margin-bottom: 24px;
 } 
 
 .readMoreButton {
   display: flex;
   justify-content: center;
   margin: 16px 5%;
-  margin-bottom: 40px;
+  margin-bottom: 0;
   padding: 10px 10px;
   border: 2px solid white;
   width: 50%;
