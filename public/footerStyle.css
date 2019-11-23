@@ -87,17 +87,51 @@ footer {
   margin: 10px 0;
 }
 
+.social {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-self: center;
+  margin-bottom: 20px;
+  height: 60px;
+  width: 100%;
+}
+
+.socialIcons {
+  height: 100%;
+  cursor: pointer;
+}
+
+.instagram {
+  align-self: center;
+  margin: 10px 0;
+  margin-left: -15px;
+  height: 78%;
+}
+
+.twitter {
+  align-self: center;
+  margin: 10px 0;
+  height: 80%;
+}
+
+.youtube {
+  align-self: center;
+  margin: 10px 0;
+  height: 80%;
+}
+
 .copyright {
   display: flex;
   justify-content: center;
   align-self: center; 
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
 .copyrightText {
   margin: 0;
-  color: rgb(100, 100, 100);
+  color: rgb(200, 200, 200);
   text-align: center;
   padding-top: 16px;
   font-size: 12px;
