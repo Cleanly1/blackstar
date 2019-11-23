@@ -112,44 +112,45 @@ function isElementInViewMobile (el) {
 }
 
 // setInterval(function(){
-// 
-// // window.document.addEventListener('scroll', function(){
+
+window.document.addEventListener('scroll', function(){
+  const overlay2d = window.document.querySelector('.overlay2d')
+  const hej = isElementInView(overlay2d);
+  const overlay2dEl = window.document.getElementsByClassName('overlay2d')[0];
+  const hej2 = isElementInViewMobile(overlay2dEl);
+  if (window.innerWidth > 1024 && hej) {
+    overlay2d.classList.add('show2dOverlayDesktop');
+  }
+  if (window.innerWidth > 1024 && hej === false) {
+    overlay2d.classList.remove('show2dOverlayDesktop');
+  }
+  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && hej) {
+    overlay2d.classList.add('show2dOverlayTablet');
+  }
+  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && hej === false) {
+      overlay2d.classList.remove('show2dOverlayTablet');
+  }
+  if (window.innerWidth < 768 && hej2 === true) {
+    overlay2d.classList.add('show2dOverlay');
+  }
+  if (window.innerWidth < 768 && hej2 === false) {
+    overlay2d.classList.remove('show2dOverlay');
+  }
+}) 
+// }, 100 )
+// window.addEventListener('touchstart', function(event){
+//   console.log(event.touches);
 //   const overlay2d = window.document.querySelector('.overlay2d')
-//   const hej = isElementInView(overlay2d);
-// 
-//   if (window.innerWidth > 1024 && hej) {
-//     overlay2d.classList.add('show2dOverlayDesktop');
-//   }
-//   if (window.innerWidth > 1024 && hej === false) {
-//     overlay2d.classList.remove('show2dOverlayDesktop');
-//   }
-//   if (window.innerWidth <= 1024 && window.innerWidth >= 768 && hej) {
-//     overlay2d.classList.add('show2dOverlayTablet');
-//   }
-//   if (window.innerWidth <= 1024 && window.innerWidth >= 768 && hej === false) {
-//       overlay2d.classList.remove('show2dOverlayTablet');
-//   }
+//   const overlay2dEl = window.document.getElementsByClassName('overlay2d')[0];
+//   const hej = isElementInViewMobile(overlay2dEl);
+//   console.log(hej);
 //   if (window.innerWidth < 768 && hej === true) {
 //     overlay2d.classList.add('show2dOverlay');
 //   }
 //   if (window.innerWidth < 768 && hej === false) {
 //     overlay2d.classList.remove('show2dOverlay');
 //   }
-// // }) 
-// }, 100 )
-window.addEventListener('touchstart', function(event){
-  console.log(event.touches);
-  const overlay2d = window.document.querySelector('.overlay2d')
-  const overlay2dEl = window.document.getElementsByClassName('overlay2d')[0];
-  const hej = isElementInViewMobile(overlay2dEl);
-  console.log(hej);
-  if (window.innerWidth < 768 && hej === true) {
-    overlay2d.classList.add('show2dOverlay');
-  }
-  if (window.innerWidth < 768 && hej === false) {
-    overlay2d.classList.remove('show2dOverlay');
-  }
-}) 
+// }) 
 window.document.querySelector('.mailInput').addEventListener('keydown', function(event){
   if (event.code === "Enter") {
     mailConfirm();
