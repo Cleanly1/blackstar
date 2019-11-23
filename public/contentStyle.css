@@ -275,6 +275,7 @@ h3:first-child {
   background-repeat: no-repeat;
   transition-duration: 2s; 
 } 
+
 .show2dOverlay {
   background-image: url(images/fullTekniskOverlay.jpg);
 }
