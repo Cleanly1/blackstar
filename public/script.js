@@ -115,28 +115,28 @@ function isElementInViewMobile (el) {
 
 window.document.addEventListener('scroll', function(){
   const overlay2d = window.document.querySelector('.overlay2d')
-  const hej = isElementInView(overlay2d);
+  const elementVisible = isElementInView(overlay2d);
   const overlay2dEl = window.document.getElementsByClassName('overlay2d')[0];
-  const hej2 = isElementInViewMobile(overlay2dEl);
+  const elementVisibleMobile = isElementInViewMobile(overlay2dEl);
   console.log(event)
-  console.log(hej2);
+  console.log(elementVisibleMobile);
   
-  if (window.innerWidth > 1024 && hej) {
+  if (window.innerWidth > 1024 && elementVisible) {
     overlay2d.classList.add('show2dOverlayDesktop');
   }
-  if (window.innerWidth > 1024 && hej === false) {
+  if (window.innerWidth > 1024 && elementVisible === false) {
     overlay2d.classList.remove('show2dOverlayDesktop');
   }
-  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && hej) {
+  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && elementVisible) {
     overlay2d.classList.add('show2dOverlayTablet');
   }
-  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && hej === false) {
+  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && elementVisible === false) {
       overlay2d.classList.remove('show2dOverlayTablet');
   }
-  if (window.innerWidth < 768 && hej2 === true) {
+  if (window.innerWidth < 768 && elementVisibleMobile === true) {
     overlay2d.classList.add('show2dOverlay');
   }
-  if (window.innerWidth < 768 && hej2 === false) {
+  if (window.innerWidth < 768 && elementVisibleMobile === false) {
     overlay2d.classList.remove('show2dOverlay');
   }
 }) 

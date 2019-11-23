@@ -273,7 +273,7 @@ h3:first-child {
   background-position: 30%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  transition-duration: 2s; 
+  transition-duration: 4s; 
 } 
 
 .show2dOverlay {
