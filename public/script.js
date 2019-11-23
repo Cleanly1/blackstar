@@ -131,7 +131,7 @@ setInterval(function(){
   if (window.innerWidth <= 1024 && window.innerWidth >= 768 && hej === false) {
       overlay2d.classList.remove('show2dOverlayTablet');
   }
-  if (window.innerWidth < 768 && hej) {
+  if (window.innerWidth < 768 && hej === true) {
     overlay2d.classList.add('show2dOverlay');
   }
   if (window.innerWidth < 768 && hej === false) {
