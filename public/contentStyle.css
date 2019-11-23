@@ -7,6 +7,7 @@
   width: 100%;
   background-image: url(images/natureimagepreviewhej.jpg);
   background-size: cover;
+  -webkit-background-size: cover;
   background-position: center;
   background-attachment: fixed;
   transition-duration: 1s; 
@@ -181,6 +182,7 @@ h3:first-child {
   height: 100vh;
   width:100vw;
   background-image: url(images/inmotionpreview.jpg);
+  -webkit-background-size: cover;
   background-size: cover;
   background-position: 75% 75%;
   background-attachment: fixed;
@@ -270,6 +272,7 @@ h3:first-child {
   height: 99vh;
   background-image: url(images/tekniskOverlay.jpg);
   background-size: cover;
+  -webkit-background-size: cover;
   background-position: 30%;
   background-attachment: fixed;
   background-repeat: no-repeat;

@@ -133,6 +133,7 @@
     align-items: center;
     height: 99vh;
     background-image: url(images/tekniskOverlay.jpg);
+    -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -217,11 +218,7 @@
     justify-content: center;
     align-items: center;
     height: 92vh;
-    background-image: url(images/tekniskOverlay.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-image: url(images/tekniskOverlay.jpg); 
     transition-duration: 2s; 
   }
   
