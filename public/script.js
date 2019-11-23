@@ -117,7 +117,7 @@ window.document.addEventListener('scroll', function(){
   const overlay2d = window.document.querySelector('.overlay2d')
   const elementVisible = isElementInView(overlay2d);
   const overlay2dEl = window.document.getElementsByClassName('overlay2d')[0];
-  const elementVisibleMobile = isElementInViewMobile(overlay2dEl);
+  const elementVisibleMobile = isElementInViewMobile(overlay2d);
   console.log(event)
   console.log(elementVisibleMobile);
   
