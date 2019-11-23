@@ -126,7 +126,7 @@
 }
 
 
-.backgroundGrey{
+.backgroundGrey {
   position: absolute;
   opacity: 0;
   display: flex;
@@ -222,17 +222,14 @@ h3:first-child {
 .engineeringH1 {
   font-size: 32px;
   margin: 0px 5%;
+  margin-top: 40px;
 }
 
 .engineeringText {
   font-size: 16px;
   line-height: 1.5em;
   margin: 16px 5%;
-}
-
-.engineeringText:first-child {
-  margin-top:40px;
-}
+} 
 
 .readMoreButton {
   display: flex;
