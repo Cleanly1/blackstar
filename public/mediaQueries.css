@@ -57,19 +57,71 @@
     padding: 0 15%;
     margin:auto;
   }
+  
   .specList {
     border-left: 2px solid white;
     padding: 40px 20px;
     width: 100%;
     margin: 20px 0px;
   }
+  
   .specList:last-child {
     border-right: 2px solid white;
   }
+  
   .specListTitle {
     width: auto;
     font-size: 32px;
   }
+  
+  .testRide {
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(images/inmotionpreviewDesktop.jpg);
+    background-position: center;
+  }
+  
+  .testRideH1 {
+    text-align: right;
+    width: 42%;
+    font-size: 48px;
+    margin-top: 12%;
+  }
+  
+  .name {
+    margin: 12px 5%;
+  }
+  .hej {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .engineering {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 25vh;
+    width: 60%;
+    padding: 5% 10%;
+  }
+  
+  .engineeringH1 {
+    order: 0;
+  }
+  .engineeringText {
+    padding-top: 20px;
+    width: 60%;
+    order: 2;
+  }
+  
+  .readMoreButton {
+    order: 1;
+    width: auto;
+    padding: 10px;
+  }
+  
   .overlay2d {
     display: flex;
     flex-flow: column nowrap;
@@ -92,7 +144,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .heroTeaserText {
     width: 40vw;
     font-size: 16px;
@@ -107,6 +159,10 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
+  }
+  .testRide {
+    background-image: url(images/inmotionpreviewDesktop.jpg);
+    background-position: center;
   }
   
   .overlay2d {

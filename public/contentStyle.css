@@ -191,14 +191,18 @@ h3:first-child {
   font-size: 26px;
   margin: 12px 5%;
 }
+.name {
+  margin: 12px 5%;
+}
 
 .requestButtonText {
   margin:0;
   font-size: 24px;
 }
+
 .requestTestRide {
   margin: 12px 5%;
-  padding: 10px 5px;
+  padding: 10px 10px;
   border: 2px solid black;
   background-color: black;
 }
