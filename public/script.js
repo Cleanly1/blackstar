@@ -115,29 +115,30 @@ function isElementInViewMobile (el) {
 
 // setInterval(function(){
   
-window.document.addEventListener('scroll', function(){
-  const overlay2d = window.document.querySelector('.overlay2d')
-   
-  if (window.innerWidth > 1024 && isElementInView(overlay2d)) {
-    overlay2d.classList.add('show2dOverlayDesktop');
-  }
-  if (window.innerWidth > 1024 && isElementInView(overlay2d) === false) {
-    overlay2d.classList.remove('show2dOverlayDesktop');
-  }
-  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && isElementInView(overlay2d)) {
-    overlay2d.classList.add('show2dOverlayTablet');
-  }
-  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && isElementInView(overlay2d) === false) {
-      overlay2d.classList.remove('show2dOverlayTablet');
-  }
-  if (window.innerWidth < 768 && isElementInViewMobile(overlay2d)) {
-    overlay2d.classList.add('show2dOverlay');
-  }
-  if (window.innerWidth < 768 && isElementInViewMobile(overlay2d) === false) {
-    overlay2d.classList.remove('show2dOverlay');
-  }
-})
+// window.document.addEventListener('scroll', function(){
+//   const overlay2d = window.document.querySelector('.overlay2d')
+// 
+//   if (window.innerWidth > 1024 && isElementInView(overlay2d)) {
+//     overlay2d.classList.add('show2dOverlayDesktop');
+//   }
+//   if (window.innerWidth > 1024 && isElementInView(overlay2d) === false) {
+//     overlay2d.classList.remove('show2dOverlayDesktop');
+//   }
+//   if (window.innerWidth <= 1024 && window.innerWidth >= 768 && isElementInView(overlay2d)) {
+//     overlay2d.classList.add('show2dOverlayTablet');
+//   }
+//   if (window.innerWidth <= 1024 && window.innerWidth >= 768 && isElementInView(overlay2d) === false) {
+//       overlay2d.classList.remove('show2dOverlayTablet');
+//   }
+//   if (window.innerWidth < 768 && isElementInViewMobile(overlay2d)) {
+//     overlay2d.classList.add('show2dOverlay');
+//   }
+//   if (window.innerWidth < 768 && isElementInViewMobile(overlay2d) === false) {
+//     overlay2d.classList.remove('show2dOverlay');
+//   }
+// })
 window.document.addEventListener('touchmove', function(){
+  // event.preventDefault();
   const overlay2d = window.document.querySelector('.overlay2d')
    
   if (window.innerWidth > 1024 && isElementInView(overlay2d)) {
