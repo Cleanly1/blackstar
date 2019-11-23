@@ -138,7 +138,7 @@ window.document.addEventListener('scroll', function(){
   }
 })
 
-window.document.addEventListener('drag', function(){
+window.document.body.addEventListener('drag', function(){
   // event.preventDefault();
   const overlay2d = window.document.querySelector('.overlay2d')
 
