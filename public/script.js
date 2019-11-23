@@ -143,7 +143,7 @@ window.addEventListener('touchstart', function(event){
   console.log(event.touches);
   const overlay2d = window.document.querySelector('.overlay2d')
   const hej = isElementInView(overlay2d);
- 
+  console.log(hej);
   if (window.innerWidth < 768 && hej === true) {
     overlay2d.classList.add('show2dOverlay');
   }
