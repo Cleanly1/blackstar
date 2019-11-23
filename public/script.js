@@ -107,9 +107,7 @@ function isElementInViewMobile (el) {
     var rect = el.getBoundingClientRect();
     return (
         rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.left >= 0 &&
-        rect.bottom >= 0 && /*or $(window).height() */
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+        rect.bottom >= 0 /*or $(window).height() */ 
     );
 }
 
@@ -142,7 +140,8 @@ setInterval(function(){
 window.addEventListener('touchstart', function(event){
   console.log(event.touches);
   const overlay2d = window.document.querySelector('.overlay2d')
-  const hej = isElementInViewMobile(overlay2d);
+  const overlay2dEl = window.document.getElementsByClassName('overlay2d')[0];
+  const hej = isElementInViewMobile(overlay2dEl);
   console.log(hej);
   if (window.innerWidth < 768 && hej === true) {
     overlay2d.classList.add('show2dOverlay');
