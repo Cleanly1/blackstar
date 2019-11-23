@@ -106,8 +106,8 @@ function isElementInViewMobile (el) {
 
     var rect = el.getBoundingClientRect();
     return (
-        rect.top < (window.innerHeight-300 || document.documentElement.clientHeight-300) &&
-        rect.bottom >= 0-300 /*or $(window).height() */ 
+        rect.top < (window.innerHeight-400 || document.documentElement.clientHeight-400) &&
+        rect.bottom >= 0-200 /*or $(window).height() */ 
     );
 }
 
@@ -120,6 +120,7 @@ window.document.addEventListener('scroll', function(){
   const hej2 = isElementInViewMobile(overlay2dEl);
   console.log(event)
   console.log(hej2);
+  
   if (window.innerWidth > 1024 && hej) {
     overlay2d.classList.add('show2dOverlayDesktop');
   }
