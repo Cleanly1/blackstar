@@ -104,11 +104,10 @@ function isElementInView (el) {
 
 function isElementInViewMobile (el) {
 
-    var rect = el.getBoundingClientRect();
-    console.log(rect.bottom)
+    var rect = el.getBoundingClientRect(); 
     return (
         rect.top < (window.innerHeight-400 || document.documentElement.clientHeight-400) &&
-        rect.bottom >= 0 /*or $(window).height() */ 
+        rect.bottom >= 0+200 /*or $(window).height() */ 
     );
 }
 
