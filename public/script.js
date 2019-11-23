@@ -97,8 +97,8 @@ function isElementInView (el) {
     return (
         rect.top < (window.innerHeight-300 || document.documentElement.clientHeight-300) &&
         rect.left >= 0 &&
-        rect.bottom >= window.innerHeight-300 && /*or $(window).height() */
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+        rect.bottom >= window.innerHeight-300 && 
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
     );
 }
 
@@ -107,20 +107,15 @@ function isElementInViewMobile (el) {
     var rect = el.getBoundingClientRect(); 
     return (
         rect.top < (window.innerHeight-400 || document.documentElement.clientHeight-400) &&
-        rect.bottom >= 0+200 /*or $(window).height() */ 
+        rect.bottom >= 0+200 
     );
 }
-
-// setInterval(function(){
-
+ 
 window.document.addEventListener('scroll', function(){
   const overlay2d = window.document.querySelector('.overlay2d')
-  const elementVisible = isElementInView(overlay2d);
-  const overlay2dEl = window.document.getElementsByClassName('overlay2d')[0];
+  const elementVisible = isElementInView(overlay2d); 
   const elementVisibleMobile = isElementInViewMobile(overlay2d);
-  console.log(event)
-  console.log(elementVisibleMobile);
-  
+
   if (window.innerWidth > 1024 && elementVisible) {
     overlay2d.classList.add('show2dOverlayDesktop');
   }
@@ -140,20 +135,7 @@ window.document.addEventListener('scroll', function(){
     overlay2d.classList.remove('show2dOverlay');
   }
 }) 
-// }, 100 )
-// window.addEventListener('touchstart', function(event){
-//   console.log(event.touches);
-//   const overlay2d = window.document.querySelector('.overlay2d')
-//   const overlay2dEl = window.document.getElementsByClassName('overlay2d')[0];
-//   const hej = isElementInViewMobile(overlay2dEl);
-//   console.log(hej);
-//   if (window.innerWidth < 768 && hej === true) {
-//     overlay2d.classList.add('show2dOverlay');
-//   }
-//   if (window.innerWidth < 768 && hej === false) {
-//     overlay2d.classList.remove('show2dOverlay');
-//   }
-// }) 
+
 window.document.querySelector('.mailInput').addEventListener('keydown', function(event){
   if (event.code === "Enter") {
     mailConfirm();
