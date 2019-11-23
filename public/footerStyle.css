@@ -6,7 +6,7 @@ footer {
   margin: 0 20px;
 }
 
-.footerList {
+.footerListMobile {
   align-self: flex-start;
   list-style: none;
   padding: 0;
@@ -70,7 +70,7 @@ footer {
   display: none;
   flex-flow: row nowrap;
   justify-content: space-evenly;
-  border-top: 2px solid white;
+  margin: 20px;
   
 }
 

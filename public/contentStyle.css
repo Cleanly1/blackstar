@@ -339,7 +339,7 @@ h3:first-child {
 .downloadButton:hover {
   background-color: rgba(50, 50, 50, 0.7);
   border: 2px solid rgba(255, 255, 255, 0.1);
-  color:white;
+  color: white;
   cursor: pointer;
 }
 

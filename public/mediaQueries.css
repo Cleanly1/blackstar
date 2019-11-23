@@ -96,14 +96,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
   }
   .engineering {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 25vh;
-    width: 60%;
+    height: 400px;
+    width: 80%;
     padding: 5% 10%;
   }
   
@@ -139,8 +140,44 @@
     background-image: url(images/fullTekniskOverlay.jpg);
   }
   
+  .folder {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 400px;
+    width: 60%;
+    padding: 2.5% 20%;
+  }
+  
+  .folderImg {
+    order: 4;
+    height: 40%;
+    width: 40%;
+  }
+  
+  .folderText {
+    width: 40%;
+  }
+  
+  .download {
+    width: 30%;
+  }
+  
   .hamburgerMenu {
     display: none;
+  }
+  .footerDesktop {
+    display: flex;
+  }
+  .footerListMobile {
+    display: none;
+  }
+  .social {
+    justify-content: space-evenly;
+    width: 40%;
+  }
+  .socialIcons:hover {
+    cursor: pointer;
   }
 }
 
