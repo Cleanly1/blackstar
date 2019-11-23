@@ -91,6 +91,51 @@ const mailConfirm = function(){
   }, 3000)
 }
 
+function isElementInView (el) {
+
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top < (window.innerHeight-300 || document.documentElement.clientHeight-300) &&
+        rect.left >= 0 &&
+        rect.bottom >= window.innerHeight-300 && /*or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+    );
+}
+
+function isElementInViewMobile (el) {
+
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top < (window.innerHeight-200 || document.documentElement.clientHeight-200) &&
+        rect.left >= 0 &&
+        rect.bottom >= window.innerHeight-100 && /*or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+    );
+}
+
+window.document.addEventListener('scroll', function(){
+  const overlay2d = window.document.querySelector('.overlay2d')
+  
+ console.log(isElementInView(overlay2d));
+  if (window.innerWidth > 1024 && isElementInView(overlay2d)) {
+    overlay2d.classList.add('show2dOverlayDesktop');
+  }
+  if (window.innerWidth > 1024 && isElementInView(overlay2d) === false) {
+    overlay2d.classList.remove('show2dOverlayDesktop');
+  }
+  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && isElementInView(overlay2d)) {
+    overlay2d.classList.add('show2dOverlayTablet');
+  }
+  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && isElementInView(overlay2d) === false) {
+      overlay2d.classList.remove('show2dOverlayTablet');
+  }
+  if (window.innerWidth < 768 && isElementInViewMobile(overlay2d)) {
+    overlay2d.classList.add('show2dOverlay');
+  }
+  if (window.innerWidth < 768 && isElementInViewMobile(overlay2d) === false) {
+    overlay2d.classList.remove('show2dOverlay');
+  }
+})
 
 window.document.querySelector('.mailInput').addEventListener('keydown', function(event){
   if (event.code === "Enter") {

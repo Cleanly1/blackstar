@@ -264,13 +264,25 @@ h3:first-child {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   height: 99vh;
-  background-image: url(images/previewImage.jpg);
+  background-image: url(images/tekniskOverlay.png);
   background-size: cover;
-  background-position: center;
+  background-position: 30%;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  transition-duration: 2s; 
 } 
+.show2dOverlay {
+  background-image: url(images/fullTekniskOverlay.png);
+}
+
+.bulletsOverlay {
+  display: none;
+  width: 100%;
+  object-fit: scale-down;
+  object-position: center;
+}
 
 .folder {
   display: flex;

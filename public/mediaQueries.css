@@ -5,11 +5,12 @@
   }
   .navbarDesktop {
     position: absolute;
-    width:100%;
+    width:90%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
   }
   .menuDesktop {
     display: flex;
@@ -19,11 +20,48 @@
   .menuItemDesktop {
     margin:10px;
   }
+  .linkMenuItemDesktop {
+    text-decoration: none;
+    color: black;
+  }
+  .overlay2d {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    background-image: url(images/tekniskOverlay.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    transition-duration: 2s; 
+  }
+  .show2dOverlayDesktop {
+    background-image: url(images/fullTekniskOverlay.png);
+  }
+  
   .hamburgerMenu {
     display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .overlay2d {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    background-image: url(images/tekniskOverlay.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    transition-duration: 2s; 
+  }
+  .show2dOverlayTablet {
+    background-image: url(images/fullTekniskOverlay.png);
+  }
   
 }
