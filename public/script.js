@@ -138,10 +138,10 @@ window.document.addEventListener('scroll', function(){
   }
 })
 
-window.document.addEventListener('touchstart', function(){
+window.document.addEventListener('drag', function(){
   // event.preventDefault();
   const overlay2d = window.document.querySelector('.overlay2d')
-   
+
   if (window.innerWidth > 1024 && isElementInView(overlay2d)) {
     overlay2d.classList.add('show2dOverlayDesktop');
   }
