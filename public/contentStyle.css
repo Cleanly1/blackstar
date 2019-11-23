@@ -266,7 +266,7 @@ h3:first-child {
   justify-content: center;
   align-items: center;
   height: 99vh;
-  background-image: url(images/tekniskOverlay.png);
+  background-image: url(images/tekniskOverlay.jpg);
   background-size: cover;
   background-position: 30%;
   background-attachment: fixed;
@@ -274,7 +274,7 @@ h3:first-child {
   transition-duration: 2s; 
 } 
 .show2dOverlay {
-  background-image: url(images/fullTekniskOverlay.png);
+  background-image: url(images/fullTekniskOverlay.jpg);
 }
 
 .bulletsOverlay {
