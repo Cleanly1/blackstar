@@ -115,7 +115,7 @@ function isElementInViewMobile (el) {
 
 setInterval(function(){
   
-window.document.addEventListener('scroll', function(){
+// window.document.addEventListener('scroll', function(){
   const overlay2d = window.document.querySelector('.overlay2d')
 
   if (window.innerWidth > 1024 && isElementInView(overlay2d)) {
@@ -136,7 +136,7 @@ window.document.addEventListener('scroll', function(){
   if (window.innerWidth < 768 && isElementInViewMobile(overlay2d) === false) {
     overlay2d.classList.remove('show2dOverlay');
   }
-})
+// })
 // window.document.addEventListener('touchmove', function(){
 //   // event.preventDefault();
 //   const overlay2d = window.document.querySelector('.overlay2d')
