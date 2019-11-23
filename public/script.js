@@ -118,6 +118,8 @@ window.document.addEventListener('scroll', function(){
   const hej = isElementInView(overlay2d);
   const overlay2dEl = window.document.getElementsByClassName('overlay2d')[0];
   const hej2 = isElementInViewMobile(overlay2dEl);
+  console.log(event)
+  console.log(hej2);
   if (window.innerWidth > 1024 && hej) {
     overlay2d.classList.add('show2dOverlayDesktop');
   }
