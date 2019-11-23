@@ -106,9 +106,9 @@ function isElementInViewMobile (el) {
 
     var rect = el.getBoundingClientRect();
     return (
-        rect.top < (window.innerHeight-200 || document.documentElement.clientHeight-200) &&
+        rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
         rect.left >= 0 &&
-        rect.bottom >= window.innerHeight-100 && /*or $(window).height() */
+        rect.bottom >= 0 && /*or $(window).height() */
         rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
     );
 }
