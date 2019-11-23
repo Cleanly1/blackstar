@@ -139,22 +139,11 @@ setInterval(function(){
   }
 // }) 
 }, 100 )
-window.document.addEventListener('touchstart', function(){
+window.addEventListener('touchstart', function(event){
+  console.log(event.touches);
   const overlay2d = window.document.querySelector('.overlay2d')
   const hej = isElementInView(overlay2d);
-
-  if (window.innerWidth > 1024 && hej) {
-    overlay2d.classList.add('show2dOverlayDesktop');
-  }
-  if (window.innerWidth > 1024 && hej === false) {
-    overlay2d.classList.remove('show2dOverlayDesktop');
-  }
-  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && hej) {
-    overlay2d.classList.add('show2dOverlayTablet');
-  }
-  if (window.innerWidth <= 1024 && window.innerWidth >= 768 && hej === false) {
-      overlay2d.classList.remove('show2dOverlayTablet');
-  }
+ 
   if (window.innerWidth < 768 && hej === true) {
     overlay2d.classList.add('show2dOverlay');
   }
