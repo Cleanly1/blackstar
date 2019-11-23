@@ -102,6 +102,12 @@ footer {
   cursor: pointer;
 }
 
+.socialLink {
+  height: 100%;
+  width: auto;
+  display: flex;
+}
+
 .instagram {
   align-self: center;
   margin: 10px 0;
