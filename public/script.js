@@ -144,10 +144,10 @@ window.addEventListener('touchstart', function(event){
   const hej = isElementInViewMobile(overlay2dEl);
   console.log(hej);
   if (window.innerWidth < 768 && hej === true) {
-    overlay2d.classList.add('show2dOverlay');
+    overlay2dEl.classList.add('show2dOverlay');
   }
   if (window.innerWidth < 768 && hej === false) {
-    overlay2d.classList.remove('show2dOverlay');
+    overlay2dEl.classList.remove('show2dOverlay');
   }
 }) 
 window.document.querySelector('.mailInput').addEventListener('keydown', function(event){
