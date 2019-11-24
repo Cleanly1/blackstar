@@ -14,6 +14,27 @@
     z-index: 1;
   }
   
+  .arrowNavbar {
+    cursor: pointer;
+    height: 10px;
+    transition-duration: 0.5s; 
+  }
+  
+  .dropdownLanguageContent {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdownLanguage:hover .dropdownLanguageContent {
+    display: block;
+  }
+  
+  .dropdownLanguage:hover .arrowNavbar {
+    transform: rotateZ(180deg) rotateY(180deg);
+  }
+  
   .menuDesktop {
     display: flex;
     flex-flow: row nowrap;
@@ -32,6 +53,10 @@
   .linkMenuItemDesktop:hover {
     color: white;
     text-shadow: 1px 1px 1px black;
+  }
+  
+  a.linkMenuItemDesktop {
+    text-shadow: none;
   }
   
   .heroTextH1 {
@@ -97,33 +122,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 400px;
   }
   
   .engineering {
     display: flex;
     flex-flow: column wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-    height: 400px;
-    width: 80%;
-    padding: 5% 10%;
+    height: 210px;
+    width: 60%;
+    padding: 0 20%;
+    padding-top: 95px;
+    padding-bottom: 95px;
   }
   
   .engineeringH1 {
     order: 0;
   }
   
-  .engineeringText {
-    padding-top: 20px;
+  .engineeringText { 
     width: 60%;
+    margin-top: 0;
+    margin-bottom: auto;
     order: 2;
+    /* flex-grow: 1; */
   }
   
   .readMoreButton {
     order: 1;
     width: auto;
     padding: 10px;
+    margin-bottom: auto;
   }
   
   .overlay2d {

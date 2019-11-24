@@ -58,6 +58,40 @@ header {
   height: 100%;
 }
 
+.dropdownLanguage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowNavbar {
+  cursor: pointer;
+  height: 20px;
+  margin-left: 10px;
+  transition-duration: 0.5s; 
+}
+
+.linkLanguageDropdown {
+  text-decoration: none;
+}
+
+.dropdownLanguageContent {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  top: 35px;
+  left: -60px;
+  z-index: 1;
+}
+
+.dropdownLanguage:hover .dropdownLanguageContent {
+  display: block;
+}
+
+.dropdownLanguage:hover .arrowNavbar {
+  transform: rotateZ(180deg) rotateY(180deg);
+}
+
 .backButton {
   display: flex;
   flex-flow: column wrap;
@@ -68,6 +102,7 @@ header {
 }
  
 .menuItem {
+  cursor: pointer;
   display: flex;
   opacity: 0;
   height: 0;

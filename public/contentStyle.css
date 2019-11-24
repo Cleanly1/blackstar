@@ -8,7 +8,7 @@
   background-image: url(images/natureimagepreviewhej.jpg);
   background-size: cover;
   -webkit-background-size: cover;
-  background-position: center;
+  background-position: 40%;
   background-attachment: fixed;
   transition-duration: 1s; 
   overflow: hidden;
