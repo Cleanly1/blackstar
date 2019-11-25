@@ -228,7 +228,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .heroTeaserText {
     width: 40vw;
     font-size: 16px;
@@ -256,6 +256,26 @@
   
   .show2dOverlayTablet {
     background-image: url(images/fullTekniskOverlay.jpg);
+  }
+  
+  .folder {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 400px;
+    width: 90%;
+    padding: 2.5% 5%;
+  }
+  
+  .folderImg {
+    order: 4;
+    height: 40%;
+    width: 40%;
+    margin-top: -25px;
+  }
+  
+  .folderText {
+    width: 40%;
   }
   
 }

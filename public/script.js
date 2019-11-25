@@ -146,8 +146,8 @@ setTimeout(function(){
 },100)
 
 window.addEventListener('resize', function(){
-  window.document.querySelector('.fullTechOverlayImage').classList.add('hallo');
-  setInterval(function(){
+  
+  setTimeout(function(){
     let imageWidth = window.document.querySelector('.techOverlayImage').getBoundingClientRect().width;
     window.document.getElementsByClassName('fullTechOverlayImage')[0].style.right = imageWidth+'px';
   },500)
