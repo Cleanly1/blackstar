@@ -125,10 +125,12 @@ window.document.addEventListener('scroll', function(){
       overlay2d.classList.remove('show2dOverlayTablet');
   }
   if (window.innerWidth < 768 && elementVisibleMobile === true) {
-    overlay2d.classList.add('show2dOverlay');
+    console.log(window.document.querySelector('.hej'))
+      window.document.querySelector('.hej').setAttribute('src','images/fullTekniskOverlay.jpg')
   }
   if (window.innerWidth < 768 && elementVisibleMobile === false) {
-    overlay2d.classList.remove('show2dOverlay');
+    window.document.querySelector('.hej').setAttribute('src','images/tekniskOverlay.jpg')
+    // overlay2d.classList.remove('show2dOverlay');
   }
 }) 
 

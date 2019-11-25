@@ -179,6 +179,10 @@
     background-image: url(images/fullTekniskOverlay.jpg);
   }
   
+  .hej{
+    display: none;
+  }
+  
   .folder {
     flex-flow: column wrap;
     justify-content: center;
