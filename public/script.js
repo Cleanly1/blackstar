@@ -125,11 +125,12 @@ window.document.addEventListener('scroll', function(){
       overlay2d.classList.remove('show2dOverlayTablet');
   }
   if (window.innerWidth < 768 && elementVisibleMobile === true) {
-    console.log(window.document.querySelector('.hej'))
-      window.document.querySelector('.hej').classList.add('hej2')
+    window.document.querySelector('.hej1').classList.add('hej1Show');
+    // overlay2d.classList.add('show2dOverlay');
   }
   if (window.innerWidth < 768 && elementVisibleMobile === false) {
-    window.document.querySelector('.hej').classList.remove('hej2')
+    window.document.querySelector('.hej1').classList.remove('hej1Show');
+
     // overlay2d.classList.remove('show2dOverlay');
   }
 }) 
