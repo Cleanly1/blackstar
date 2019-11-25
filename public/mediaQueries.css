@@ -252,12 +252,41 @@
   
   .overlay2d {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 92vh;
-    background-image: url(images/tekniskOverlay.jpg); 
-    transition-duration: 2s; 
+    overflow-x: scroll;
+    height: 96vh;
+    background-image: url(images/tekniskOverlay.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 0%;
+    background-origin: border-box;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    transition-duration: 4s; 
+  } 
+  .hej {
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+
+  .hej1 {
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    float: left;
+    /* left: -1006.7px; */
+    z-index: 1;
+    opacity: 0;
+    transition-delay: 1s;
+    transition-duration: 1.5s; 
+  }
+
+  .hej1Show {
+    opacity: 1;
   }
   
   .show2dOverlayTablet {

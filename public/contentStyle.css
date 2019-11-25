@@ -297,10 +297,10 @@ h3:first-child {
   height: 100%;
   top: 0;
   float: left;
-  left: -1006.7px;
+  /* left: -1006.7px; */
   z-index: 1;
   opacity: 0;
-  transition-delay: 1s;
+  /* transition-delay: 1s; */
   transition-duration: 1.5s; 
 }
 
