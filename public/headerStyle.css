@@ -19,7 +19,7 @@ header {
   height: 40px;
   width: 90%; 
   z-index: 1;
-  transition-duration: 0.1s;
+  transition-duration: 0.8s;
 }
 
 .navbarMobile {
@@ -46,17 +46,18 @@ header {
   top:72px;
   position: absolute;
   background: rgba(0, 0, 0, 0.9);
-  height: 0;
+  height: 100%;
   width: 100vw; 
   z-index: 1;
   transition-timing-function: ease-in-out;
   transition-delay: 0.1s;
-  transition-duration: 0.4s;
-  transition: max-height 1s;
+  transition-duration: 0.4s; 
+  transform: translateY(-110%);
 }
 
 .hamburgerContentShow {
-  height: 100%;
+  position: fixed;
+  transform: translateY(0%);
 }
 
 .dropdownLanguage {
@@ -80,8 +81,8 @@ header {
   display: none;
   cursor: pointer;
   position: relative;
-  top: 35px;
-  left: -60px;
+  top: 40px;
+  left: -140px;
   z-index: 1;
 }
 
@@ -105,9 +106,9 @@ header {
 .menuItem {
   cursor: pointer;
   display: flex;
-  opacity: 0;
-  height: 0;
-  margin: 0;
+  opacity: 1; 
+  margin: 15px 0;
+  height: auto; 
   transition-timing-function: ease-in-out;
   transition-delay: 0.1s;
   transition-duration: 0.5s;
@@ -119,11 +120,7 @@ header {
   margin-left: 20px;
 }
 
-.menuItemShow {
-  opacity: 1; 
-  margin: 15px 0;
-  height: auto; 
-}
+
  
 .hamburgerMenu {
   display: inline-block;

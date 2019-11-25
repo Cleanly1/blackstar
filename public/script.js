@@ -10,11 +10,7 @@ const showMobileMenu = function(){
   let isToggled = toggle.classList.toggle("change")
   document.body.classList.toggle("scrollHidden")
   
-  hamburger.classList.toggle("hamburgerContentShow");  
-
-  for (var i = 0; i < menuItem.length; i++) {
-    menuItem[i].classList.toggle("menuItemShow");
-  }  
+  hamburger.classList.toggle("hamburgerContentShow"); 
   
   
   // changes color of navbarMobileBox
@@ -88,7 +84,7 @@ const mailConfirm = function(){
     setTimeout(function(){
       window.document.querySelector('.mailButton').style.display = 'none'
     }, 2000)
-  }, 3000)
+  }, 1000)
 }
 
 function isElementInView (el) {
