@@ -267,7 +267,7 @@ h3:first-child {
 .overlay2d {
   display: flex;
   overflow-x: scroll;
-  height: 99vh;
+  height: 96vh;
   background-image: url(images/tekniskOverlay.jpg);
   background-size: cover;
   -webkit-background-size: cover;
@@ -279,10 +279,16 @@ h3:first-child {
 } 
 
 .hej {
-  height: 99vh;
+  height: 100%;
   object-fit: cover;
   object-position: center;
+  content: url('images/tekniskOverlay.jpg');
+  transition-timing-function: ease-in-out;
   transition-duration: 4s; 
+}
+
+.hej2 {
+  content: url('images/fullTekniskOverlay.jpg');
 }
 .show2dOverlay {
   background-image: url(images/fullTekniskOverlay.jpg);
