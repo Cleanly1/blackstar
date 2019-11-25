@@ -44,7 +44,7 @@ header {
 .hamburgerContent {
   display: block;
   top:72px;
-  position: fixed;
+  position: absolute;
   background: rgba(0, 0, 0, 0.9);
   height: 0;
   width: 100vw; 
@@ -52,6 +52,7 @@ header {
   transition-timing-function: ease-in-out;
   transition-delay: 0.1s;
   transition-duration: 0.4s;
+  transition: max-height 1s;
 }
 
 .hamburgerContentShow {

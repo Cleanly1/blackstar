@@ -106,12 +106,15 @@
     background-image: url(images/inmotionpreviewDesktop.jpg);
     background-position: center;
   }
-  
+  .linkLanguageDropdown {
+
+  }
   .testRideH1 {
     text-align: right;
     width: 42%;
     font-size: 48px;
     margin-top: 12%;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
   }
   
   .name {
@@ -154,6 +157,7 @@
     width: auto;
     padding: 10px;
     margin-bottom: auto;
+    margin-right: 5.5%;
   }
   
   .overlay2d {
@@ -212,7 +216,7 @@
   
   .social {
     justify-content: space-evenly;
-    width: 40%;
+    width: 17%;
   }
   
   .socialIcons:hover {
