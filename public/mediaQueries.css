@@ -160,6 +160,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     height: 99vh;
     width: 100%;
     background-image: url(images/tekniskOverlay.jpg);
@@ -176,11 +177,11 @@
   }
   
   .hej {
-    /* display: none; */
+    display: none;
   }
   
   .hej1 {
-    /* display: none; */
+    display: none;
   }
   
   .folder {
