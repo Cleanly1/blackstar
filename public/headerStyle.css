@@ -19,7 +19,7 @@ header {
   height: 40px;
   width: 90%; 
   z-index: 1;
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
 }
 
 .navbarMobile {
@@ -28,7 +28,7 @@ header {
   list-style: none;
   height: 90%;
   justify-content: flex-start;
-  align-items: flex-start; 
+  align-items: flex-end; 
   font-size: 32px;
   margin:0 40px;
   padding-left:0;
@@ -44,26 +44,26 @@ header {
 .hamburgerContent {
   display: block;
   top:72px;
-  position: absolute;
+  position: fixed;
   background: rgba(0, 0, 0, 0.9);
   height: 100%;
   width: 100vw; 
   z-index: 1;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out; 
   transition-duration: 0.4s; 
-  transform: translateY(-110%);
+  transform: translateX(-110%);
 }
 
 .hamburgerContentShow {
   position: fixed;
-  transform: translateY(0%);
+  transform: translateX(0%);
 }
 
 .dropdownLanguage {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .arrowNavbar {
@@ -74,6 +74,7 @@ header {
 }
 
 .linkLanguageDropdown {
+  position: absolute;
   text-decoration: none;
 }
 
@@ -81,7 +82,7 @@ header {
   display: none;
   cursor: pointer;
   position: relative;
-  top: 40px;
+  top: 35px;
   left: -140px;
   z-index: 1;
 }
