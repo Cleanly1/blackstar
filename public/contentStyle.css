@@ -157,21 +157,20 @@
   /* border-bottom: 2px solid white; */
 }
  
-
-h6 {
-  margin: 16px 0;
-  font-size: 16px;
-}
-
-h3 {
+.specListTitle {
   margin: 20px 0;
   margin-bottom: 16px;
   font-size: 32px;
 }
-h3:first-child {
+.specListTitle:first-child {
   margin:0;
   margin-bottom: 16px;
   font-size: 32px;
+}
+
+.specListText {
+  margin: 16px 0;
+  font-size: 16px;
 }
 
 .testRide {
@@ -267,16 +266,10 @@ h3:first-child {
 .overlay2d {
   display: flex;
   overflow-x: scroll;
-  height: 96vh;
-  background-image: url(images/tekniskOverlay.jpg);
-  background-size: cover;
-  -webkit-background-size: cover;
-  background-position: 50% 0%;
-  background-origin: border-box;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  transition-duration: 4s;
+  height: 90vh;
+  background: black;
 } 
+
 .overlay2d::-webkit-scrollbar-track {
   background: #000000;
 }
@@ -284,12 +277,8 @@ h3:first-child {
   width: 1px;
 }
 .overlay2d::-webkit-scrollbar-thumb {
-  background:#FFFFFF; 
-}
- 
-.show2dOverlay {
-  background-image: url(images/fullTekniskOverlay.jpg);
-}
+  background: #FFFFFF; 
+} 
 
 .hej {
   position: relative;
@@ -315,17 +304,7 @@ h3:first-child {
 
 .hej1Show {
   opacity: 1;
-}
-
-/* .bulletsOverlay {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: 1;
-} */
-
+} 
 
 .folder {
   display: flex;

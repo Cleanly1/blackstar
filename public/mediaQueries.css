@@ -106,16 +106,13 @@
     background-image: url(images/inmotionpreviewDesktop.jpg);
     background-position: center;
   }
-  .linkLanguageDropdown {
-
-  }
+  
   .testRideH1 {
     text-align: right;
     width: 42%;
     font-size: 48px;
     margin-top: 12%;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
-  }
+  } 
   
   .name {
     margin: 12px 5%;
@@ -157,8 +154,7 @@
     width: auto;
     padding: 10px;
     margin-bottom: auto;
-    margin-right: 5.5%;
-  }
+  } 
   
   .overlay2d {
     display: flex;
@@ -179,7 +175,11 @@
     background-image: url(images/fullTekniskOverlay.jpg);
   }
   
-  .hej{
+  .hej {
+    display: none;
+  }
+  
+  .hej1 {
     display: none;
   }
   
@@ -220,7 +220,7 @@
   
   .social {
     justify-content: space-evenly;
-    width: 17%;
+    width: 40%;
   }
   
   .socialIcons:hover {
@@ -252,41 +252,12 @@
   
   .overlay2d {
     display: flex;
-    overflow-x: scroll;
-    height: 96vh;
-    background-image: url(images/tekniskOverlay.jpg);
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-position: 50% 0%;
-    background-origin: border-box;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    transition-duration: 4s; 
-  } 
-  .hej {
-    position: relative;
-    object-fit: cover;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 0;
-  }
-
-  .hej1 {
-    position: relative;
-    object-fit: cover;
-    height: 100%;
-    top: 0;
-    float: left;
-    /* left: -1006.7px; */
-    z-index: 1;
-    opacity: 0;
-    transition-delay: 1s;
-    transition-duration: 1.5s; 
-  }
-
-  .hej1Show {
-    opacity: 1;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    background-image: url(images/tekniskOverlay.jpg); 
+    transition-duration: 2s; 
   }
   
   .show2dOverlayTablet {
