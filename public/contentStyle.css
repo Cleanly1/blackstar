@@ -275,8 +275,17 @@ h3:first-child {
   background-origin: border-box;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  transition-duration: 4s; 
+  transition-duration: 4s;
 } 
+.overlay2d::-webkit-scrollbar-track {
+  background: #000000;
+}
+.overlay2d::-webkit-scrollbar {
+  width: 1px;
+}
+.overlay2d::-webkit-scrollbar-thumb {
+  background:#FFFFFF; 
+}
  
 .show2dOverlay {
   background-image: url(images/fullTekniskOverlay.jpg);
