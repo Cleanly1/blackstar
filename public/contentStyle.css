@@ -280,7 +280,7 @@
   background: #FFFFFF; 
 } 
 
-.hej {
+.techOverlayImage {
   position: relative;
   object-fit: cover;
   height: 100%;
@@ -289,20 +289,17 @@
   z-index: 0;
 }
 
-.hej1 {
+.fullTechOverlayImage {
   position: relative;
   object-fit: cover;
   height: 100%;
-  top: 0;
-  float: left;
-  /* left: -1006.7px; */
+  top: 0; 
   z-index: 1;
-  opacity: 0;
-  /* transition-delay: 1s; */
+  opacity: 0; 
   transition-duration: 1.5s; 
 }
 
-.hej1Show {
+.fullTechOverlayImageShow {
   opacity: 1;
 } 
 
