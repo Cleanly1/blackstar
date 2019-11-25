@@ -106,13 +106,12 @@
     background-image: url(images/inmotionpreviewDesktop.jpg);
     background-position: center;
   }
-  
   .testRideH1 {
     text-align: right;
     width: 42%;
     font-size: 48px;
     margin-top: 12%;
-  } 
+  }
   
   .name {
     margin: 12px 5%;
@@ -154,7 +153,7 @@
     width: auto;
     padding: 10px;
     margin-bottom: auto;
-  } 
+  }  
   
   .overlay2d {
     display: flex;
@@ -162,6 +161,7 @@
     justify-content: center;
     align-items: center;
     height: 99vh;
+    width: 100%;
     background-image: url(images/tekniskOverlay.jpg);
     -webkit-background-size: cover;
     background-size: cover;
@@ -176,11 +176,11 @@
   }
   
   .hej {
-    display: none;
+    /* display: none; */
   }
   
   .hej1 {
-    display: none;
+    /* display: none; */
   }
   
   .folder {
@@ -220,7 +220,6 @@
   
   .social {
     justify-content: space-evenly;
-    width: 40%;
   }
   
   .socialIcons:hover {
@@ -252,12 +251,6 @@
   
   .overlay2d {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 92vh;
-    background-image: url(images/tekniskOverlay.jpg); 
-    transition-duration: 2s; 
   }
   
   .show2dOverlayTablet {
