@@ -274,7 +274,7 @@
   background: #000000;
 }
 .overlay2d::-webkit-scrollbar {
-  width: 1px;
+  width: 3px;
 }
 .overlay2d::-webkit-scrollbar-thumb {
   background: #FFFFFF; 
