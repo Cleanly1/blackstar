@@ -62,6 +62,22 @@
     text-shadow: none;
   }
   
+  .hero {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 99vh;
+    width: 100%;
+    background-image: url(images/heroImageOptimized.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    transition-duration: 1s; 
+    overflow: hidden;
+  } 
+  
   .heroTextH1 {
     font-size: 50px;
   }
