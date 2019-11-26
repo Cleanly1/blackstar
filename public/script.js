@@ -23,25 +23,13 @@ const showMobileMenu = function(){
   }
   // changes color of navbarMobileBox
   else if (isToggled === false) {
-    
-    if (window.pageYOffset > 100) {
-      document.querySelector('.navbarMobileBox').style.background = 'white';
-    }else {
+  
       document.querySelector('.navbarMobileBox').style.background = 'none';
-    }
-    
+  
   }
   
   
-}
-
-const displayScroll = function() {
-  if (window.pageYOffset > 100 && window.innerWidth < 1024) {
-    document.querySelector('.navbarMobileBox').style.background = 'white';
-  }else {
-    document.querySelector('.navbarMobileBox').style.background = 'none';
-  }
-}
+} 
  
 const allDropDowns = document.body.querySelectorAll(".dropbtn");
 const arrows = document.body.querySelectorAll('.arrow');
@@ -92,27 +80,25 @@ const mailConfirm = function(){
 function isElementInView (el) {
 
     var rect = el.getBoundingClientRect();
+  if (window.innerWidth >= 768) {
     return (
         rect.top < (window.innerHeight-300 || document.documentElement.clientHeight-300) &&
         rect.left >= 0 &&
         rect.bottom >= window.innerHeight-300 && 
         rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
     );
-}
-
-function isElementInViewMobile (el) {
-
-    var rect = el.getBoundingClientRect(); 
+  }
+  if (window.innerWidth < 768) {
     return (
         rect.top < (window.innerHeight-400 || document.documentElement.clientHeight-400) &&
         rect.bottom >= 0+200 
     );
+  }
 }
  
 window.document.addEventListener('scroll', function(){
   const overlay2d = window.document.querySelector('.overlay2d')
-  const elementVisible = isElementInView(overlay2d); 
-  const elementVisibleMobile = isElementInViewMobile(overlay2d);
+  const elementVisible = isElementInView(overlay2d);
 
   if (window.innerWidth > 1024 && elementVisible) {
     overlay2d.classList.add('show2dOverlayDesktop');
@@ -128,13 +114,13 @@ window.document.addEventListener('scroll', function(){
     window.document.querySelector('.fullTechOverlayImage').classList.remove('fullTechOverlayImageShow');
       // overlay2d.classList.remove('show2dOverlayTablet');
   }
-  if (window.innerWidth < 768 && elementVisibleMobile === true) {
+  if (window.innerWidth < 768 && elementVisible === true) {
     setTimeout(function(){
       window.document.querySelector('.fullTechOverlayImage').classList.add('fullTechOverlayImageShow');
     }, 500)
     // overlay2d.classList.add('show2dOverlay');
   }
-  if (window.innerWidth < 768 && elementVisibleMobile === false) {
+  if (window.innerWidth < 768 && elementVisible === false) {
     window.document.querySelector('.fullTechOverlayImage').classList.remove('fullTechOverlayImageShow');
 
     // overlay2d.classList.remove('show2dOverlay');
@@ -182,10 +168,7 @@ window.document.querySelector('.mailInput').addEventListener('focus', function()
 window.document.querySelector('.mailInput').addEventListener('focusout', function(){
   window.document.querySelector('.mailInput').setAttribute('placeholder', 'BlackStar Exclusive')
 })
-// setInterval(function(){ window.document.getElementsByClassName('hero')[0].classList.toggle("heroBG2"); }, 4000);
-
-
-window.onscroll = displayScroll;
+ 
 window.document.getElementsByClassName('hamburgerMenu')[0].addEventListener('click', function(){
   showMobileMenu();
 }); 

@@ -25,11 +25,7 @@
   border: 2px solid white;
   padding: 0 10px;
   transition-duration: 0.5s;
-}
-
-/* .heroBG2 {
-  background-color: rgba(0, 0, 0, 1);
-} */
+} 
 
 .mailField {
   display: flex;
