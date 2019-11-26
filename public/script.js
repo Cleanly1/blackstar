@@ -12,6 +12,8 @@ const showMobileMenu = function(){
   
   hamburger.classList.toggle("hamburgerContentShow"); 
   
+  mobileNavbar.querySelector('.logo').classList.toggle("logoWhite")
+  // window.document.querySelector('.logo').classList.toggle("logoWhite");
   
   // changes color of navbarMobileBox
   if (isToggled === true) { 

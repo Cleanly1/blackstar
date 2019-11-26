@@ -4,6 +4,9 @@
     display: none;
   }
   
+  .backgroundGrey {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
   .navbarDesktop {
     position: absolute;
     width:90%;

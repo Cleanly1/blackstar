@@ -3,6 +3,17 @@ header {
   left:0;
 } 
 
+.logo {
+  height: 46px;
+  width: 46px;
+  fill: #000;
+  transition-duration: 1s;
+}
+
+.logoWhite {
+  fill: #fff;
+}
+
 .navbarDesktop {
   display: none;
   justify-content: center;
@@ -10,7 +21,7 @@ header {
 }
 
 .navbarMobileBox {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -42,6 +53,7 @@ header {
   background-color: transparent;
   border: none;
   padding: 0;
+  box-shadow: none;
 }
 
 .hamburgerContent {
