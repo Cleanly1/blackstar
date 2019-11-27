@@ -3,7 +3,7 @@ footer {
   flex-flow: column nowrap;
   background-color: black; 
   border-top: 2px solid white;
-  margin: 0 40px;
+  margin: 0 5%;
 }
 
 .footerListMobile {
