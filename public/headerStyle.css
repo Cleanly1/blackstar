@@ -15,9 +15,7 @@ header {
 }
 
 .navbarDesktop {
-  display: none;
-  justify-content: center;
-  margin: 0 5%;
+  display: none; 
 }
 
 .navbarMobileBox {
@@ -54,6 +52,7 @@ header {
   border: none;
   padding: 0;
   box-shadow: none;
+  outline: none;
 }
 
 .hamburgerContent {
@@ -102,11 +101,11 @@ header {
   z-index: 1;
 }
 
-.dropdownLanguage:hover .dropdownLanguageContent {
+.menuItem:last-child:hover .dropdownLanguageContent {
   display: block;
 }
 
-.dropdownLanguage:hover .arrowNavbar {
+.menuItem:last-child:hover .arrowNavbar {
   transform: rotateZ(180deg) rotateY(180deg);
 }
 
