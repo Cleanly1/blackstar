@@ -12,9 +12,7 @@ const showMobileMenu = function(){
   
   hamburger.classList.toggle("hamburgerContentShow"); 
   
-  mobileNavbar.querySelector('.logo').classList.toggle("logoWhite")
-  // window.document.querySelector('.logo').classList.toggle("logoWhite");
-  
+  mobileNavbar.querySelector('.logo').classList.toggle("logoWhite")  
   // changes color of navbarMobileBox
   if (isToggled === true) { 
     
@@ -108,23 +106,19 @@ window.document.addEventListener('scroll', function(){
   }
   if (window.innerWidth <= 1024 && window.innerWidth >= 768 && elementVisible) {
     window.document.querySelector('.fullTechOverlayImage').classList.add('fullTechOverlayImageShow');
-    // overlay2d.classList.add('show2dOverlayTablet');
-  }
+  } 
   if (window.innerWidth <= 1024 && window.innerWidth >= 768 && elementVisible === false) {
     window.document.querySelector('.fullTechOverlayImage').classList.remove('fullTechOverlayImageShow');
-      // overlay2d.classList.remove('show2dOverlayTablet');
-  }
+  } 
   if (window.innerWidth < 768 && elementVisible === true) {
     setTimeout(function(){
       window.document.querySelector('.fullTechOverlayImage').classList.add('fullTechOverlayImageShow');
     }, 500)
-    // overlay2d.classList.add('show2dOverlay');
-  }
+  } 
   if (window.innerWidth < 768 && elementVisible === false) {
     window.document.querySelector('.fullTechOverlayImage').classList.remove('fullTechOverlayImageShow');
 
-    // overlay2d.classList.remove('show2dOverlay');
-  }
+  } 
 }) 
 
 
@@ -139,17 +133,7 @@ window.addEventListener('resize', function(){
     let imageWidth = window.document.querySelector('.techOverlayImage').getBoundingClientRect().width;
     window.document.getElementsByClassName('fullTechOverlayImage')[0].style.right = imageWidth+'px';
   },500)
-  console.log(window.document.getElementsByClassName('fullTechOverlayImage')[0].style.right)
-})
-
-// setInterval(function(){
-// let imageWidth = window.document.querySelector('.hej').getBoundingClientRect().width;
-// window.document.getElementsByClassName('hej1')[0].style.right = imageWidth+'px';
-// // console.log(window.document.getElementsByClassName('hej1')[0].style.right)
-// }, 100)
-
-
-
+}) 
 
 window.document.querySelector('.mailInput').addEventListener('keydown', function(event){
   if (event.code === "Enter") {
@@ -166,7 +150,7 @@ window.document.querySelector('.mailInput').addEventListener('focus', function()
 })
 
 window.document.querySelector('.mailInput').addEventListener('focusout', function(){
-  window.document.querySelector('.mailInput').setAttribute('placeholder', 'BlackStar Exclusive')
+  window.document.querySelector('.mailInput').setAttribute('placeholder', 'BLACKSTAR EXCLUSIVE')
 })
  
 window.document.getElementsByClassName('hamburgerMenu')[0].addEventListener('click', function(){
