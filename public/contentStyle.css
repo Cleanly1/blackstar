@@ -177,7 +177,7 @@
   justify-content: center;
   height: 100vh;
   width:100vw;
-  background-image: url(images/inmotionpreview.jpg);
+  background-image: url(images/inmotionMobile.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 75% 75%;
@@ -263,7 +263,7 @@
 .overlay2d {
   display: flex;
   overflow-x: scroll;
-  height: 90vh;
+  height: 94vh;
   background: black;
 } 
 

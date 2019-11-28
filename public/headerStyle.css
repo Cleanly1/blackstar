@@ -99,15 +99,7 @@ header {
   top: 35px;
   left: -140px;
   z-index: 1;
-}
-
-.menuItem:last-child:hover .dropdownLanguageContent {
-  display: block;
-}
-
-.menuItem:last-child:hover .arrowNavbar {
-  transform: rotateZ(180deg) rotateY(180deg);
-}
+} 
 
 .backButton {
   display: flex;
@@ -121,6 +113,7 @@ header {
 .menuItem {
   cursor: pointer;
   display: flex;
+  flex-flow: row nowrap;
   opacity: 1; 
   margin: 15px 0;
   height: auto; 
@@ -128,6 +121,19 @@ header {
   transition-delay: 0.1s;
   transition-duration: 0.5s;
 } 
+
+.menuItem:last-child {
+  align-items: center;
+}
+
+.menuItem:last-child:hover .dropdownLanguageContent {
+  display: block;
+}
+
+.menuItem:last-child:hover .arrowNavbar {
+  transform: rotateZ(180deg) rotateY(180deg);
+}
+
 .navbarArrow{
   align-self: center;
   height: 20px;

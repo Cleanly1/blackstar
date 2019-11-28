@@ -9,7 +9,7 @@
   }
   .navbarDesktop {
     position: absolute;
-    width:90%;
+    width: 90%;
     height: 64px;
     display: flex;
     flex-flow: row nowrap;
@@ -73,7 +73,7 @@
     flex-flow: column nowrap;
     justify-content: flex-end;
     align-items: flex-start;
-    height: 99vh;
+    height: 100vh;
     width: 100%;
     background-image: url(images/heroImageOptimized.jpg);
     background-size: cover;
@@ -128,7 +128,7 @@
     flex-flow: column nowrap;
     align-items: flex-end;
     justify-content: center;
-    background-image: url(images/inmotionpreviewDesktop.jpg);
+    background-image: url(images/inmotionScaledDown.jpg);
     background-position: center;
   }
   .testRideH1 {
