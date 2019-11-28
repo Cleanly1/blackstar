@@ -175,12 +175,13 @@
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
+  padding-bottom: 20vh;
   width:100vw;
-  background-image: url(images/inmotionMobile.jpg);
+  background-image: url(images/inmotionScaledDown.jpg);
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: 75% 75%;
+  background-position: 25% 25%;
   background-attachment: fixed;
 }
 
