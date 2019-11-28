@@ -46,7 +46,7 @@
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
-    width: 58%;
+    width: auto;
     height: 50px;
   }
   
