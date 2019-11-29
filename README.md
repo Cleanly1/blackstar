@@ -17,7 +17,7 @@ List of participants:
 
 This landing page was made with HTML, CSS and JavaScript. We built it mobile first then scaled everything up and made it responsive.
 
-![Mobile Preview](/public/mobilePreview.jpg)
+![Mobile Preview](public/images/mobilePreview.png)
 
 ## Where to look at the site
 The site is uploaded to Netlify. [Link to the site](https://blackstar6.netlify.com/)
