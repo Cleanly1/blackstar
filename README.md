@@ -22,3 +22,8 @@ This landing page was made with HTML, CSS and JavaScript. We built it mobile fir
 ## Where to look at the site
 The site is uploaded to Netlify. [Link to the site](https://blackstar6.netlify.com/)
 
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details
+
+YRGO 2019
